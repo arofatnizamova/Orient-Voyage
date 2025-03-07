@@ -1,0 +1,1563 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Proza+Libre:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+
+:root{
+    --background-color:#A1A1A1;
+    --text-blue-solid:#133875;
+    --text-black:#242424;
+    --text-white:#FFFFFF;
+    --background-color-left:#133875;
+    --text-orange:#F69F00;
+    --benefit-color:#EDF2F9;
+    --light-blue:#E2E8F0;
+    --light-black:#424242;
+    --middle-blue:#005FA0;
+    --orange:#F69F00;
+    --text-gray: #424242;
+    --gray-blue: #64748B;
+    --text-blue: #133875;
+}
+
+
+
+/* /////////////////////////////// */
+/* edited on 30th Nov, 2dec, 10dec  */
+
+body {
+    overflow-x: hidden;
+    position: relative;
+}
+a{
+    color: inherit;
+}
+.bg-image-banner{
+    position: absolute;
+    width: 45%;
+    right: 0;
+    top: 0;
+    z-index: -1;
+    height: 100vh;
+}
+
+.container-fluid{
+    padding: 0 clamp(10px, 3vw, 80px);
+}
+.navbar-collapse-hidden{
+    justify-content: end;
+}
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+.navbar-toggler-icon{
+    background-image: url('../icons/burger-svg.svg');
+}
+.navbar-toggler{
+    border: none;
+}
+.gallery{
+    position: absolute;
+    left:0;
+    top:250px; 
+    z-index:10;
+}
+
+.gallery img {
+    width: 492px;
+    height: 70px;
+    margin-left: 23px;
+    margin-top: 70px;
+    /* background-color: rgba(0, 0, 0, 0.3); */
+}
+
+.gallery .text-overlay {
+    position: absolute;
+    top: 71px;
+    /* left: -60px; */
+    width: 372px;
+    height: 70px;
+    display: flex
+;
+    align-items: center;
+    justify-content: start;
+    z-index: 1;
+}
+
+
+.card-img-overlay {
+    position: absolute;
+    width: 84%;
+    height: 41%;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
+    margin-left: 43px;
+    margin-top: 294px;
+    padding: 13px;
+}
+
+.card {
+    box-shadow: none;
+    border: none;
+}
+
+
+.card-img-overlay-blue{
+    background-image: url(../images/bluekvadrat.png);
+    
+}
+
+.card-img-overlay-yellow{
+    background-image: url(../images/orangekvadrat.png);
+}
+
+
+.slick-prev, .slick-next {
+    z-index: 1000;
+    display: block !important;
+}
+
+.bg-index {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    background: url('../images/indexNew/bg-index.png') no-repeat center center;
+    background-size: cover;
+    z-index: -1;
+} 
+
+.bg-blue {
+    background-image: url('../images/indexNew/bg-blue.png');
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center; 
+    width: 85%;
+    height: 40%;
+    top: 70%;
+    margin-left: 5%!important;
+}
+
+
+
+.slider > button {
+    color: var(--background-color-left);
+    background-color: #fff;
+    border: none;
+    cursor: pointer;
+    z-index: 10;
+   
+}
+
+.btn-warning {
+    background-color: var(--orange);
+    /* border: none;
+    font-size: 16px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); */
+}
+
+
+
+.sidebar {
+    /* border-right: 1px solid #e0e0e0; */
+    font-family: Arial, sans-serif;
+}
+
+.sidebar .logo-section {
+    text-align: left;
+}
+
+.sidebar .menu ul li {
+    margin: 10px 0;
+    /* font-size: 28px; */
+}
+
+.sidebar .menu ul li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 30px!important;
+}
+
+.sidebar .menu ul li a.active {
+    font-weight: bold;
+    color: #0056b3;
+    font-size: 30px!important;
+}
+
+/* Центральная часть */
+.bg-image {
+    background: url('../images/indexNew/main-image.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+/* Правая колонка */
+.bg-primary {
+    background-color: #002f5f;
+    padding: 40px;
+}
+
+.btn-warning {
+    background-color: var(--orange);
+    border: none;
+    font-size: 16px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Для текста */
+/* h1 {
+    font-size: 28px;
+    line-height: 1.2;
+}
+h3 {
+    font-size: 20px;
+} */
+
+
+
+
+
+
+
+.text-white {
+    color: var(--text-white);
+}
+
+
+.text-blue {
+    color: var(--text-blue)!important;
+}
+
+.text-gr-blue{
+    color:var(--gray-blue);
+}
+
+.text-orange {
+    color:var(--text-orange);
+}
+
+.text-gray {
+    color: var(--text-gray);
+}
+
+.bg-light-blue {
+    background-color: var(--light-blue);
+}
+
+.border-gray {
+    color: var(--gray-blue);
+}
+
+.bg-img {
+    background: url('../images/choy.png');
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center; /
+}
+
+/* .bg-blue {
+    background: url('../images/workers.png');
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center; 
+    width: 90%;
+    top:80%;
+    margin-left: 4%!important;
+} */
+
+.bg-taj {
+    background: url('../images/tajikistan/back.png');
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center; 
+    width: 100%;
+}
+
+.bg-taj-mb {
+    background: url('../images/tajikistan/bg-taj-mg.png');
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center; 
+}
+
+
+.bg-uzb {
+    background: url('../images/UzbekistanNew/back.png');
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center; 
+    width: 100%;
+}
+
+.bg-uzb-mb {
+    background: url('../images/UzbekistanNew/back_mb.png');
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center; 
+}
+
+
+.bg-kaz {
+    background: url('../images/kazakhstanNew/back.png');
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center; 
+    width: 100%;
+}
+
+.bg-kaz-mb {
+    background: url('../images/kazakhstanNew/back_mb.png');
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center; 
+}
+
+
+.bg-kyr {
+    background: url('../images/kyrgyzstanNew/back.png');
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center; 
+    width: 100%;
+}
+
+.bg-kyr-mb {
+    background: url('../images/kyrgyzstanNew/back_mb.png');
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center; 
+}
+
+
+
+.bg-tur {
+    background: url('../images/turkmenistanNew/back.png');
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center; 
+    width: 100%;
+}
+
+
+.bg-tur-mb {
+    background: url('../images/turkmenistanNew/back_mb.png');
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center; 
+}
+
+
+.bg-buh {
+    background: url('../images/bukharaNew/back.png');
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center; 
+    width: 100%;
+}
+
+
+.bg-buh-mb {
+    background: url('../images/bukharaNew/back_mb.png');
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center; 
+}
+
+
+.bg-tash {
+    background: url('../images/tashkentNew/back.png');
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center; 
+    width: 100%;
+}
+
+
+.bg-tash-mb {
+    background: url('../images/tashkentNew/back_mn.png');
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center; 
+}
+
+.bg-sam {
+    background: url('../images/samarkandNew/back.png');
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center; 
+    width: 100%;
+}
+
+
+.bg-sam-mb {
+    background: url('../images/samarkandNew/back_mb.png');
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center; 
+}
+
+
+.bg-khor {
+    background: url('../images/xorezmNew/back.png');
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center; 
+    width: 100%;
+}
+
+
+.bg-khor-mb {
+    background: url('../images/xorezmNew/back_mb.png');
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center; 
+}
+
+.bg-shax {
+    background: url('../images/shaxrisabzNew/back.png');
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center; 
+    width: 100%;
+}
+
+
+.bg-shax-mb {
+    background: url('../images/shaxrisabzNew/back_mb.png');
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center; 
+}
+
+
+.bg-kar {
+    background: url('../images/karakalpakstan/back.png');
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center; 
+    width: 100%;
+}
+
+
+.bg-kar-mb {
+    background: url('../images/karakalpakstan/back_mb.png');
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center; 
+}
+
+
+.bg-ter {
+    background: url('../images/termezNew/back.png');
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center; 
+    width: 100%;
+}
+
+
+.bg-ter-mb {
+    background: url('../images/termezNew/back_mg.png');
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center; 
+}
+
+.bg-fer {
+    background: url('../images/ferganaNew/back.png');
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center; 
+    width: 100%;
+}
+
+
+.bg-fer-mb {
+    background: url('../images/ferganaNew/back_mb.png');
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center; 
+}
+
+
+
+
+h1 {
+    font-size: 62px;
+    font-weight: 400;
+}
+
+h2 {
+    font-size: 52px;
+    font-weight: 400;
+}
+
+h3 {
+    font-size: 34px;
+    font-weight: 400;
+}
+
+h4 {
+    font-size: 29px;
+    font-weight: 300;
+}
+
+p {
+    font-size: 29px;
+    /* font-weight: 400; */
+}
+
+.bg-gray {
+ background-color: rgba(255, 255, 255, 0.34);
+ 
+}
+
+.border-gray {
+    color:  rgba(255, 255, 255, 0.34);
+}
+
+.list-group-item.active {
+    z-index: 2;
+    color: blue;
+    background-color: var(--light-blue);
+    border-color: var(--bs-list-group-active-border-color);
+}
+
+.list-group-item {
+    position: relative;
+    /* display: block; */
+    /* padding: 20px; */
+    color: var(--text-blue) !important;
+    text-decoration: none;
+    background-color: #fff;
+    border: none;
+    font-size: 20px;
+}
+
+.table {
+    border: none!important;
+}
+.table th, .table td {
+    border: none!important;
+}
+
+.table {
+    background-color: transparent !important;
+}
+
+
+.prv-btn  {
+    position: absolute;
+    border: none;
+    background-color: transparent;
+    font-size: 2rem;
+    color: var(--text-blue); 
+    z-index: 10;
+}
+
+
+.nxt-btn {
+    position: absolute;
+    border: none;
+    background-color: transparent;
+    font-size: 2rem;
+    color: var(--text-blue)!important; 
+    z-index: 10;
+}
+
+.prv:hover, .nxt:hover {
+    color: var(--text-blue); 
+}
+
+
+
+.bi-arrow-left-circle {
+    font-size: 2.5rem;
+}
+
+@media(max-width: 990px) {
+    .bg-image-banner{
+       display: none;
+    }
+    .logo{
+        width: 90px;
+    }
+}
+
+
+@media (max-width: 600px) {
+    
+    body{
+        overflow-x: hidden;
+    }
+
+
+    h1, h2, h3, h4 {
+        font-size: 24px !important;
+    }
+
+    p {
+        font-size: 18px !important;
+    }
+
+    p .fs-5 {
+        font-size: 12px !important;
+    }
+
+    .breadcrumb-item {
+        color: var(--light-black);
+    }
+
+    .bg_mob_index {
+        background-image: url(../images/indexNew/bg_mob_index.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 600px;
+        position: relative;
+    }
+
+    .bg_prmr_mob {
+        background-image: url(../images/indexNew/bg_prmr_mob.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        width: 90%;
+        flex-direction: column;
+        height: 70%;
+        position: absolute;
+        top: -58px;
+        left: 22px;
+    }
+
+    .btn {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+
+    .bg-blue {
+        background-image: url('../images/indexNew/bg-blue.png');
+        background-repeat: no-repeat;
+        background-size: cover; 
+        background-position: center; 
+        width: 85%;
+        height: 60%;
+        top: 75%;
+        margin-left: 5%!important;
+    }
+    
+    .card-img-overlay {
+        position: absolute;
+        width: 100%;
+        height: 41%;
+        justify-content: center;
+        background-color: rgba(0, 0, 0, 0.3);
+        color: white;
+        margin-left: 0%;
+        margin-top: 275px;
+        padding: 13px;
+    }
+
+
+    .slider-item {
+        border: 5px solid #333;
+        background: #ccc;
+        height: 200px;
+        font-size: 72px;
+        text-align: center;
+        line-height: 200px;
+      }
+      /* Slider arrows */
+      .slick-arrow {
+        z-index: 9;
+      }
+      .slick-prev {
+        left: 0;
+      }
+      .slick-next {
+        right: 0;
+      }
+
+
+
+    .gallery {
+        position: absolute;
+        left: -15px;
+        top: 216px;
+        z-index: 1;
+    }
+
+    
+    .gallery img {
+        width: 492px;
+        height: 70px;
+        margin-left: 23px;
+        margin-top: 70px;
+    }
+    
+    .gallery .text-overlay {
+        position: absolute;
+        top: 71px;
+        width: 372px;
+        height: 70px;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        z-index: 1;
+    }
+
+    
+    
+    .prev-btn  {
+        position: absolute;
+        border: none;
+        background-color: transparent;
+        font-size: 2rem;
+        color: #003366; 
+        z-index: 10;
+    }
+
+
+    .next-btn {
+        position: absolute;
+        border: none;
+        background-color: transparent;
+        font-size: 2rem;
+        color: #003366; 
+        z-index: 10;
+    }
+    
+    .prev:hover, .next:hover {
+        color: #0056b3; /* Цвет при наведении */
+    }
+    
+    
+    .bi-chevron-left, .bi-chevron-right {
+        font-size: 2.5rem; /* Размер иконок */
+    }
+    
+
+
+
+}
+
+
+
+
+
+
+
+
+
+/* //////////////////////// */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .nav-item.a {
+    color: var(--text-blue-solid);
+} */
+
+.nav-item{
+    margin-left: 31px;
+    /* color:#242424; */
+} 
+
+/* .a > nav-link-active{
+    color:var(--text-blue-solid);
+    border-bottom: 1px solid var(--background-color-left);
+    font-weight: bold;
+}
+
+.nav-link > a{
+    font-size: 18px; */
+    /* color: var(--text-black); */
+/* } */ 
+
+.nav-link{
+    color: var(--text-blue);
+    font-size: 18px;
+}
+
+
+.navbar-nav .nav-link.active{
+    color: var(--text-blue-solid);
+    border-bottom: 1px solid var(--background-color-left);
+    font-weight: bold;
+}
+
+
+.breadcrumb > li {
+    color: #424242;
+}
+
+.breadcrumb > li > a {
+    text-decoration: none;
+    color: #424242;
+}
+
+.btn {
+    padding: 13.1px 24.1px;
+    font-weight: bold;
+}
+
+.btn-primary {
+    background-color: var(--color-copr);
+    border-color: var(--color-copr);
+}
+
+.btn-group > ul{
+    max-width: 15px;
+}
+
+.icon-span {
+    display: inline-block;
+    width: 40px;
+    height: 40px; 
+    background-color: #133875; 
+    border-radius: 50%; 
+    text-align: center; 
+    line-height: 40px; 
+}
+
+.flaguk{
+    width: 40px;
+}
+
+.carousel-section {
+    position: relative;
+}
+
+.carousel-section li:nth-child(4),
+.carousel-section li:nth-child(5) {
+    color: white;
+}
+
+.carousel-section .call{
+    color:white;
+}
+
+.carousel-section .en{
+    color:white;
+}
+
+.centralasia-image{
+    width: 80%;
+    height: 100%;
+    position: relative;
+    /* z-index: 1; */
+}
+
+.centralasia-section .title{
+    font-weight: bold;
+    color:white;
+}
+
+.centralasia-section .btn.btn-primary{
+    background-color: var(--orange);
+    border-color: var(--orange);
+    margin-top: 80px;
+    width: 250px;
+}
+
+.centralasia-section .bi.bi-arrow-right{
+    color:white;
+    margin-left: -160px;
+}
+
+.centralasia-section .num{
+    color:white;
+    /* margin-left: 50px; */
+}
+
+
+.carousel-section:after {
+    content: "";
+    background-image: url(../images/cover-uzb.png);
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 50%;
+    height: 100%; 
+    z-index: -1;
+}
+
+.header{
+    position: absolute;
+    z-index: 1;
+}
+
+
+.centralasia-section {
+    position: relative;
+    padding: 50px 0;
+    overflow: hidden;
+}
+
+.centralasia-section::after {
+    content: "";
+    background-image: url(../images/cover-uzb.png);
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    z-index: 0;
+    background-size: cover;
+    background-position: center;
+}
+
+.centralasia-section .container {
+    position: relative;
+    z-index: 1;
+}
+
+
+.tourism-span{
+    width: 55px;
+    height: 55px; 
+    background-color: var(--orange); 
+    padding: 17px;
+    color:white;
+}
+
+.about-title{
+    color:var(--text-orange);
+    font-weight: bold;
+}
+
+
+
+
+/* .gallery{
+    position: absolute;
+    left:0;
+    top:250px; 
+    z-index:10;
+}
+
+.gallery img{
+    width:370px; 
+    height: 70px; 
+    margin-left: 30px; 
+    margin-bottom:25px;
+}
+
+.gallery .text-overlay{
+    position: absolute;
+    top:5px; 
+    left: -85px; 
+    width:370px; 
+    height:70px; 
+    color: white; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    z-index: 1;
+} */
+
+
+
+
+list-inline-item{
+    padding-left: 150px;
+}
+
+/* header.bi.bi-telephone-fill{
+    background-color:var(--text-blue-solid);
+}
+    */
+
+
+
+
+
+.social-items{
+    height: 500px; 
+    width: 100px; 
+    background-color: var(--background-color-left);
+    padding: 10px 0;
+    padding-top: 100px;
+    margin-right: 50px;
+    
+}
+
+.social-items .image-icon{
+    width: 40px;
+}
+
+
+.uzb{
+  position: relative;
+  width: 100%;
+  height: 500px;
+}
+
+.cover-uzb{
+    position: absolute;
+    width: 45%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    text-align: center;
+} 
+
+.uzb-cover h1{
+    color:var(--text-white);
+    padding: 100px;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+} 
+
+
+
+/* .text-overlay {
+    padding: 1px;
+    width: 100%;
+} */
+
+.dropdown-menu {
+    min-width: 89px;
+}
+
+.xor{
+    position: absolute;
+    width: 350px;
+    height: 70px;
+    margin-bottom: 0;
+    /* margin: 50px; */
+    margin-top: 220px;
+    z-index: 1;
+}
+
+.center{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    font-size: 18px;
+    color:var(--text-white);
+}
+
+
+.round-button{
+    background-color: #F69F00; 
+    color: white; 
+    border: none; 
+    padding: 15px 30px; 
+    font-size: 1.2em; 
+    cursor: pointer; 
+    border-radius: 50px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
+    transition: background-color 0.3s ease; 
+    margin-left: 50px;
+    margin-top: 50px;
+}
+
+.btn-primary{
+    background-color:var(--text-blue-solid); 
+    color: white; 
+}
+
+/* .benefit{
+    background-color:var(--benefit-color);
+    padding: 60px; 
+    height: 450px;
+    margin: 0;
+} */
+
+/* .benefit h5{
+    color:var(--text-orange);
+    text-transform: uppercase;
+    font-weight: bold;
+} */
+
+
+
+.tours{
+    position: absolute;
+    display: flex;
+    width: 500px;
+    height: 10px;
+    background-image: url(../images/workers.png);
+    color: white;
+}
+
+
+.breadcrumbs{
+    background-color: var(--light-blue);
+    height: 50px;
+    padding:10px;
+}
+
+.form-container {
+    background-color:var(--light-blue);
+    padding: 30px;
+    height: 400px;
+    margin: 50px auto;
+}
+.form-container h2 {
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+.form-container p {
+    margin-bottom: 10px;
+}
+.form-container .form-control {
+    margin-bottom: 15px;
+    border-radius: 5px;
+    padding: 10px;
+}
+.btn-submit {
+    background-color: #133875;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    width: 100%;
+    font-size: 16px;
+}
+
+
+
+
+
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #e6f2ff;
+    margin-bottom: 20px;
+}
+
+.table th,
+.table td {
+    border: 1px solid #b3d9ff;
+    padding: 10px;
+    text-align: left;
+}
+
+.table thead {
+    background-color: #cce6ff;
+}
+
+.note {
+    font-style: italic;
+    color: #666;
+}
+
+
+.booking-form {
+    margin: 0 auto;
+    padding: 20px;
+    background-color:var(--light-blue);
+}
+
+.booking-form h1 {
+    color: var(--text-blue-solid);
+    text-align: center;
+    margin-bottom: 30px;
+}
+.form-row {
+    display: flex;
+    margin-bottom: 20px;
+}
+.form-group {
+    flex: 1;
+    margin-right: 20px;
+}
+.form-group:last-child {
+    margin-right: 0;
+}
+.booking-form input,
+.booking-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: white;
+}
+.booking-form textarea {
+    height: 100px;
+    resize: vertical;
+}
+.booking-form input[type="date"]::-webkit-calendar-picker-indicator {
+    float: right;
+    margin-right: 5px;
+}
+.room-type {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.room-type h3,
+.room-type p {
+    margin: 0;
+}
+
+
+.map{
+    width: 100%;
+    position: relative;
+    z-index: -1;
+}
+
+.contact{
+    width: 770px;
+    height: 200px;
+    position: absolute;
+    z-index: 1;
+    bottom: -200px;
+    right: 209px;
+    justify-content: center;
+}
+
+.btn-lg{
+    background-color:#015FA0; 
+    color:white; 
+    width: 350px; 
+    height: 60px;
+}
+
+.items{
+    background-color: var(--light-blue); 
+    padding: 10px;
+    /* width: 1000px; */
+}
+
+.items > img{
+    width: 40px; 
+    height: 70px; 
+    margin-right: 10px;
+}
+
+.bg-corp{
+    background-color:var(--background-color-left);
+    height: 25vh;
+}
+
+.list-inline > li{
+    color:white;
+    font-size: 22px;
+    /* font-weight: bold; */
+    margin-top: 7%;
+    padding-left: 17px;
+}
+
+.p-letter{
+    margin-top: 20%;
+    color: white;
+}
+
+
+.bi.bi-telephone-fill{
+    color:white;
+    
+}
+
+/* .bi.bi-telephone-fill.span{
+    background-color: white;
+
+} */
+
+/* .starsam > img{
+    width: 215px; 
+    height: 135px;
+} */
+
+.bi.bi-star-fill{
+    color: var(--orange);
+}
+
+.orient > img{
+    width: 200px;
+    height:200px;
+    margin-top: -40px;
+}
+
+.star{
+    background-color:var(--light-blue);
+    padding: 15px;
+    padding-top: 55px;
+    height: 300px;
+    
+}
+
+.star > p{
+    color:var(--background-color-left);
+}
+
+.hotel-h2{
+    color:var(--text-blue-solid);
+}
+
+
+.uzbekistan{
+    text-align: center;
+    text-transform: uppercase;
+    color:var(--text-orange);
+    font-weight: bold;
+}
+
+
+section p{
+    font-size: 19px;
+    
+}
+
+.uzblue{
+    background-color:var(--light-blue);
+    padding:5%;
+    border-top-left-radius: 75px;
+}
+
+
+
+.infoicon-span{ 
+    /* display: inline-block; */
+    width: 75px;
+    height: 75px; 
+    background-color: #133875; 
+    /* border-radius: 50%; 
+    text-align: center; 
+    line-height: 40px; */
+    padding: 17px;
+    
+}
+
+
+.information{
+    background-color:var(--light-blue);
+    padding:2%;
+    margin-top: 25px;
+}
+
+
+.tourtitle{
+    text-align: center;
+    color:var(--text-orange);
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+
+.toursubtitle{
+    text-align: center;
+    color:var(--text-black);
+    /* text-transform: uppercase; */
+    font-weight: bold;
+}
+
+
+.card-body-tours{
+    padding:25px;
+    /* height: 50px; */
+}
+
+.card-body-tours > h5{
+    font-weight: bold;
+    color:var(--text-blue-solid);
+}
+
+.icon-spacing{
+    padding: 5px;
+    color:var(--background-color-left);
+    font-weight: bold;
+}
+
+.price{
+    margin-left: 6px;
+    font-weight: 500;
+}
+
+.price > span{
+    color:var(--text-blue-solid);
+}
+
+.bi.bi-arrow-right-circle-fill{
+    padding-left: 60%;
+    color:#005FA0;
+    padding-bottom: 50%;
+}
+
+/* 
+.pagination > li.page-item {
+    margin-left: 27px; 
+} */
+
+.pagination .page-item .page-link{
+    color: gray; 
+    border: none;
+    background-color: transparent;
+}
+
+.pagination .page-item.active .page-link {
+    background-color: #0056b3; 
+    color: white; 
+    border-radius: 50%; 
+    width: 40px; 
+    height: 40px; 
+    text-align: center; 
+}
+
+
+
+
+/* 
+@media only screen and (max-width: 600px) {
+    .nav-item {
+        margin-left: 15px;
+    }
+
+    .nav-link {
+        font-size: 16px;
+    }
+
+    .btn {
+        padding: 10px 20px;
+    }
+
+    .centralasia-section .btn.btn-primary {
+        width: 200px;
+    }
+
+    .round-button {
+        padding: 10px 20px;
+        font-size: 1em;
+        margin-left: 0;
+    }
+
+    .benefit {
+        padding: 30px;
+        height: auto;
+    }
+
+    .tourtitle {
+        font-size: 18px;
+    }
+
+    .toursubtitle {
+        font-size: 16px;
+    }
+
+    .card-body-tours > h5 {
+        font-size: 16px;
+    }
+
+    .pagination .page-item.active .page-link {
+        width: 30px;
+        height: 30px;
+    }
+} */
+
+/* Medium devices (landscape tablets, 600px to 900px) */
+/* @media only screen and (min-width: 601px) and (max-width: 900px) {
+    .nav-item {
+        margin-left: 20px;
+    }
+
+    .nav-link {
+        font-size: 17px;
+    }
+
+    .btn {
+        padding: 11px 22px;
+    }
+
+    .centralasia-section .btn.btn-primary {
+        width: 220px;
+    }
+
+    .round-button {
+        padding: 12px 25px;
+        font-size: 1.1em;
+    }
+
+    .benefit {
+        padding: 45px;
+        height: auto;
+    }
+
+    .tourtitle {
+        font-size: 20px;
+    }
+
+    .toursubtitle {
+        font-size: 18px;
+    }
+
+    .card-body-tours > h5 {
+        font-size: 18px;
+    }
+
+    .pagination .page-item.active .page-link {
+        width: 35px;
+        height: 35px;
+    }
+} */
+
+/* Large devices (laptops/desktops, 900px and above) */
+/* @media only screen and (min-width: 901px) {
+    .nav-item {
+        margin-left: 31px;
+    }
+
+    .nav-link {
+        font-size: 18px;
+    }
+
+    .btn {
+        padding: 13.1px 24.1px;
+    }
+
+    .centralasia-section .btn.btn-primary {
+        width: 250px;
+    }
+
+    .round-button {
+        padding: 15px 30px;
+        font-size: 1.2em;
+        margin-left: 50px;
+    }
+
+    .benefit {
+        padding: 60px;
+        height: 450px;
+    }
+
+    .tourtitle {
+        font-size: 22px;
+    }
+
+    .toursubtitle {
+        font-size: 20px;
+    }
+
+    .card-body-tours > h5 {
+        font-size: 20px;
+    }
+
+    .pagination .page-item.active .page-link {
+        width: 40px;
+        height: 40px;
+    }
+} */
+
