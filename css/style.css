@@ -26,9 +26,12 @@
 body {
     overflow-x: hidden;
     position: relative;
+    font-family: "Inter";
 }
+
 a{
     color: inherit;
+    text-decoration: none;
 }
 .bg-image-banner{
     position: absolute;
@@ -37,6 +40,7 @@ a{
     top: 0;
     z-index: -1;
     height: 100vh;
+
 }
 
 .container-fluid{
@@ -54,6 +58,72 @@ a{
 .navbar-toggler{
     border: none;
 }
+.side-nav-menu{
+    left: 0;
+    top: 0;
+
+}
+.logo{
+    width: clamp(90px, 10vw, 190px);
+}
+.fs-title{
+    font-size: clamp(1.25rem, 0.6875rem + 2.8125vw, 4.0625rem);
+}
+.btn {
+    padding: clamp(10px, 2vw, 25px) clamp(16px, 5vw, 85px) !important;
+    color: white;
+    background: #133875;
+    border-radius: 50px;
+    box-shadow: 0px 4px 0px #000056;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    font-size: clamp(0.75rem, 0.65rem + 0.5vw, 1.25rem);
+}
+
+.btn:hover {
+    color: white;
+    background: #133875;
+    box-shadow: 0px 4px 0px #000056;
+}
+
+.btn:active {
+    transform: translateY(4px);
+    box-shadow: none;
+}
+
+.btn-yellow {
+    background: #F69F00;
+    box-shadow: 0px 4px 0px #b26b00;;
+}
+
+.aside-link{
+    transition: all 0.3s ease;
+    position: relative;
+}
+.aside-link:hover{
+    font-weight: bold;
+}
+.aside-link::before{
+    content: "—";
+    position: absolute;
+    left: -45px;
+    opacity: 0;
+    transition: opacity 0.3s ease, left 0.3s ease;
+}
+.aside-link:hover::before {
+    opacity: 1;
+    left: -30px; /* Двигаем тире ближе */
+}
+.text-balance{
+    text-wrap: balance;
+}
+
+
+
+
+
+
 .gallery{
     position: absolute;
     left:0;
@@ -578,9 +648,10 @@ p {
     .bg-image-banner{
        display: none;
     }
-    .logo{
-        width: 90px;
+    .bg-lg-section{
+        background: url('../images/home-page/bg-image.png') no-repeat center/cover;
     }
+    
 }
 
 
