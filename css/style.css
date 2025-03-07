@@ -16,6 +16,7 @@
     --text-gray: #424242;
     --gray-blue: #64748B;
     --text-blue: #133875;
+    --color-dirty-gray: #585858;
 }
 
 
@@ -69,6 +70,18 @@ a{
 .fs-title{
     font-size: clamp(1.25rem, 0.6875rem + 2.8125vw, 4.0625rem);
 }
+.fs-title-2{
+    font-size: clamp(0.875rem, 0.525rem + 1.75vw, 2.625rem);
+}
+.fs-paragraph{
+    font-size: clamp(0.875rem, 0.75rem + 0.625vw, 1.5rem);
+}
+.fs-number{
+    font-size: clamp(0.75rem, 0.125rem + 3.125vw, 3.875rem);
+}
+.fs-span{
+    font-size: clamp(0.75rem, 0.6rem + 0.75vw, 1.5rem);
+}
 .btn {
     padding: clamp(10px, 2vw, 25px) clamp(16px, 5vw, 85px) !important;
     color: white;
@@ -118,7 +131,15 @@ a{
 .text-balance{
     text-wrap: balance;
 }
-
+.text-dirty-grey{
+    color: var(--color-dirty-gray);
+}
+.bg-benefit{
+    background: var(--benefit-color);
+}
+.mt-custom{
+    margin-top: 250px;
+}
 
 
 
@@ -202,10 +223,11 @@ a{
     background-repeat: no-repeat;
     background-size: cover; 
     background-position: center; 
-    width: 85%;
-    height: 40%;
-    top: 70%;
-    margin-left: 5%!important;
+    width: 90%;
+    height: fit-content;
+    bottom: -20%;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 
@@ -551,7 +573,7 @@ h3 {
 
 
 
-h1 {
+/* h1 {
     font-size: 62px;
     font-weight: 400;
 }
@@ -569,7 +591,7 @@ h3 {
 h4 {
     font-size: 29px;
     font-weight: 300;
-}
+} */
 
 p {
     font-size: 29px;
@@ -651,6 +673,9 @@ p {
     .bg-lg-section{
         background: url('../images/home-page/bg-image.png') no-repeat center/cover;
     }
+    .mt-custom{
+        margin-top: 30px;
+    }
     
 }
 
@@ -666,9 +691,9 @@ p {
         font-size: 24px !important;
     }
 
-    p {
+    /* p {
         font-size: 18px !important;
-    }
+    } */
 
     p .fs-5 {
         font-size: 12px !important;
@@ -705,7 +730,7 @@ p {
         padding: 10px 20px;
     }
 
-    .bg-blue {
+    /* .bg-blue {
         background-image: url('../images/indexNew/bg-blue.png');
         background-repeat: no-repeat;
         background-size: cover; 
@@ -713,8 +738,7 @@ p {
         width: 85%;
         height: 60%;
         top: 75%;
-        margin-left: 5%!important;
-    }
+    } */
     
     .card-img-overlay {
         position: absolute;
