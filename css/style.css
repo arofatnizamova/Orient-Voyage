@@ -3,19 +3,16 @@
 
 :root{
     --background-color:#A1A1A1;
-    --text-blue-solid:#133875;
     --text-black:#242424;
     --text-white:#FFFFFF;
-    --background-color-left:#133875;
     --text-orange:#F69F00;
     --benefit-color:#EDF2F9;
     --light-blue:#E2E8F0;
-    --light-black:#424242;
     --middle-blue:#005FA0;
     --orange:#F69F00;
     --text-gray: #424242;
     --gray-blue: #64748B;
-    --text-blue: #133875;
+    --color-corp: #133875;
     --color-dirty-gray: #585858;
 }
 
@@ -73,8 +70,17 @@ a{
 .fs-title-2{
     font-size: clamp(0.875rem, 0.525rem + 1.75vw, 2.625rem);
 }
+.fs-section-title{
+    font-size: clamp(1.25rem, 0.975rem + 1.375vw, 2.625rem);
+}
 .fs-paragraph{
     font-size: clamp(0.875rem, 0.75rem + 0.625vw, 1.5rem);
+}
+.fs-paragraph-2{
+    font-size: clamp(1rem, 0.85rem + 0.75vw, 1.75rem);
+}
+.fs-paragraph-3{
+    font-size: clamp(0.875rem, 0.8rem + 0.375vw, 1.25rem);
 }
 .fs-number{
     font-size: clamp(0.75rem, 0.125rem + 3.125vw, 3.875rem);
@@ -140,10 +146,28 @@ a{
 .mt-custom{
     margin-top: 250px;
 }
+.slider-btn-box-1{
+    right: 0;
+    top: -10%;
+}
 
-
-
-
+.slider-btn{
+    border: none;
+    border-radius: 50%;
+    background-color: white !important;
+    color: var(--color-corp) !important;
+    all: unset; 
+    display: inline-flex; 
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+.slider-btn:hover{
+    background-color: var(--color-corp) !important;
+    color: white !important;
+    border-radius: 50%;
+    outline: 1px solid var(--color-corp);
+}
 
 .gallery{
     position: absolute;
@@ -174,33 +198,24 @@ a{
 }
 
 
-.card-img-overlay {
+.card-tour {
     position: absolute;
-    width: 84%;
-    height: 41%;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 5%;
+    width: 90%;
     justify-content: center;
-    background-color: rgba(0, 0, 0, 0.3);
+    background: rgba(19, 56, 117, 0.7);
     color: white;
-    margin-left: 43px;
-    margin-top: 294px;
-    padding: 13px;
+    transition: all 0.3s ease;
 }
-
+.card-tour:hover{
+    background: rgba(255, 153, 0, 0.65);
+}
 .card {
     box-shadow: none;
     border: none;
 }
-
-
-.card-img-overlay-blue{
-    background-image: url(../images/bluekvadrat.png);
-    
-}
-
-.card-img-overlay-yellow{
-    background-image: url(../images/orangekvadrat.png);
-}
-
 
 .slick-prev, .slick-next {
     z-index: 1000;
@@ -295,19 +310,6 @@ a{
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* Для текста */
-/* h1 {
-    font-size: 28px;
-    line-height: 1.2;
-}
-h3 {
-    font-size: 20px;
-} */
-
-
-
-
-
 
 
 .text-white {
@@ -346,15 +348,6 @@ h3 {
     background-position: center; /
 }
 
-/* .bg-blue {
-    background: url('../images/workers.png');
-    background-repeat: no-repeat;
-    background-size: cover; 
-    background-position: center; 
-    width: 90%;
-    top:80%;
-    margin-left: 4%!important;
-} */
 
 .bg-taj {
     background: url('../images/tajikistan/back.png');
@@ -572,32 +565,6 @@ h3 {
 
 
 
-
-/* h1 {
-    font-size: 62px;
-    font-weight: 400;
-}
-
-h2 {
-    font-size: 52px;
-    font-weight: 400;
-}
-
-h3 {
-    font-size: 34px;
-    font-weight: 400;
-}
-
-h4 {
-    font-size: 29px;
-    font-weight: 300;
-} */
-
-p {
-    font-size: 29px;
-    /* font-weight: 400; */
-}
-
 .bg-gray {
  background-color: rgba(255, 255, 255, 0.34);
  
@@ -666,237 +633,21 @@ p {
     font-size: 2.5rem;
 }
 
-@media(max-width: 990px) {
-    .bg-image-banner{
-       display: none;
-    }
-    .bg-lg-section{
-        background: url('../images/home-page/bg-image.png') no-repeat center/cover;
-    }
-    .mt-custom{
-        margin-top: 30px;
-    }
-    
-}
-
-
-@media (max-width: 600px) {
-    
-    body{
-        overflow-x: hidden;
-    }
-
-
-    h1, h2, h3, h4 {
-        font-size: 24px !important;
-    }
-
-    /* p {
-        font-size: 18px !important;
-    } */
-
-    p .fs-5 {
-        font-size: 12px !important;
-    }
-
-    .breadcrumb-item {
-        color: var(--light-black);
-    }
-
-    .bg_mob_index {
-        background-image: url(../images/indexNew/bg_mob_index.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        height: 600px;
-        position: relative;
-    }
-
-    .bg_prmr_mob {
-        background-image: url(../images/indexNew/bg_prmr_mob.png);
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-position: center;
-        width: 90%;
-        flex-direction: column;
-        height: 70%;
-        position: absolute;
-        top: -58px;
-        left: 22px;
-    }
-
-    .btn {
-        font-size: 16px;
-        padding: 10px 20px;
-    }
-
-    /* .bg-blue {
-        background-image: url('../images/indexNew/bg-blue.png');
-        background-repeat: no-repeat;
-        background-size: cover; 
-        background-position: center; 
-        width: 85%;
-        height: 60%;
-        top: 75%;
-    } */
-    
-    .card-img-overlay {
-        position: absolute;
-        width: 100%;
-        height: 41%;
-        justify-content: center;
-        background-color: rgba(0, 0, 0, 0.3);
-        color: white;
-        margin-left: 0%;
-        margin-top: 275px;
-        padding: 13px;
-    }
-
-
-    .slider-item {
-        border: 5px solid #333;
-        background: #ccc;
-        height: 200px;
-        font-size: 72px;
-        text-align: center;
-        line-height: 200px;
-      }
-      /* Slider arrows */
-      .slick-arrow {
-        z-index: 9;
-      }
-      .slick-prev {
-        left: 0;
-      }
-      .slick-next {
-        right: 0;
-      }
-
-
-
-    .gallery {
-        position: absolute;
-        left: -15px;
-        top: 216px;
-        z-index: 1;
-    }
-
-    
-    .gallery img {
-        width: 492px;
-        height: 70px;
-        margin-left: 23px;
-        margin-top: 70px;
-    }
-    
-    .gallery .text-overlay {
-        position: absolute;
-        top: 71px;
-        width: 372px;
-        height: 70px;
-        display: flex;
-        align-items: center;
-        justify-content: start;
-        z-index: 1;
-    }
-
-    
-    
-    .prev-btn  {
-        position: absolute;
-        border: none;
-        background-color: transparent;
-        font-size: 2rem;
-        color: #003366; 
-        z-index: 10;
-    }
-
-
-    .next-btn {
-        position: absolute;
-        border: none;
-        background-color: transparent;
-        font-size: 2rem;
-        color: #003366; 
-        z-index: 10;
-    }
-    
-    .prev:hover, .next:hover {
-        color: #0056b3; /* Цвет при наведении */
-    }
-    
-    
-    .bi-chevron-left, .bi-chevron-right {
-        font-size: 2.5rem; /* Размер иконок */
-    }
-    
-
-
-
-}
-
-
-
-
-
-
-
-
-
-/* //////////////////////// */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* .nav-item.a {
-    color: var(--text-blue-solid);
-} */
-
 .nav-item{
     margin-left: 31px;
     /* color:#242424; */
 } 
-
-/* .a > nav-link-active{
-    color:var(--text-blue-solid);
-    border-bottom: 1px solid var(--background-color-left);
-    font-weight: bold;
-}
-
-.nav-link > a{
-    font-size: 18px; */
-    /* color: var(--text-black); */
-/* } */ 
 
 .nav-link{
     color: var(--text-blue);
     font-size: 18px;
 }
 
-
 .navbar-nav .nav-link.active{
     color: var(--text-blue-solid);
     border-bottom: 1px solid var(--background-color-left);
     font-weight: bold;
 }
-
 
 .breadcrumb > li {
     color: #424242;
@@ -981,7 +732,6 @@ p {
     /* margin-left: 50px; */
 }
 
-
 .carousel-section:after {
     content: "";
     background-image: url(../images/cover-uzb.png);
@@ -1037,51 +787,9 @@ p {
     font-weight: bold;
 }
 
-
-
-
-/* .gallery{
-    position: absolute;
-    left:0;
-    top:250px; 
-    z-index:10;
-}
-
-.gallery img{
-    width:370px; 
-    height: 70px; 
-    margin-left: 30px; 
-    margin-bottom:25px;
-}
-
-.gallery .text-overlay{
-    position: absolute;
-    top:5px; 
-    left: -85px; 
-    width:370px; 
-    height:70px; 
-    color: white; 
-    display: flex; 
-    align-items: center; 
-    justify-content: center;
-    z-index: 1;
-} */
-
-
-
-
 list-inline-item{
     padding-left: 150px;
 }
-
-/* header.bi.bi-telephone-fill{
-    background-color:var(--text-blue-solid);
-}
-    */
-
-
-
-
 
 .social-items{
     height: 500px; 
@@ -1096,7 +804,6 @@ list-inline-item{
 .social-items .image-icon{
     width: 40px;
 }
-
 
 .uzb{
   position: relative;
@@ -1121,13 +828,6 @@ list-inline-item{
     margin-bottom: 20px;
 } 
 
-
-
-/* .text-overlay {
-    padding: 1px;
-    width: 100%;
-} */
-
 .dropdown-menu {
     min-width: 89px;
 }
@@ -1151,7 +851,6 @@ list-inline-item{
     color:var(--text-white);
 }
 
-
 .round-button{
     background-color: #F69F00; 
     color: white; 
@@ -1171,21 +870,6 @@ list-inline-item{
     color: white; 
 }
 
-/* .benefit{
-    background-color:var(--benefit-color);
-    padding: 60px; 
-    height: 450px;
-    margin: 0;
-} */
-
-/* .benefit h5{
-    color:var(--text-orange);
-    text-transform: uppercase;
-    font-weight: bold;
-} */
-
-
-
 .tours{
     position: absolute;
     display: flex;
@@ -1194,7 +878,6 @@ list-inline-item{
     background-image: url(../images/workers.png);
     color: white;
 }
-
 
 .breadcrumbs{
     background-color: var(--light-blue);
@@ -1230,11 +913,6 @@ list-inline-item{
     font-size: 16px;
 }
 
-
-
-
-
-
 .table {
     width: 100%;
     border-collapse: collapse;
@@ -1257,7 +935,6 @@ list-inline-item{
     font-style: italic;
     color: #666;
 }
-
 
 .booking-form {
     margin: 0 auto;
@@ -1307,7 +984,6 @@ list-inline-item{
 .room-type p {
     margin: 0;
 }
-
 
 .map{
     width: 100%;
@@ -1362,21 +1038,10 @@ list-inline-item{
     color: white;
 }
 
-
 .bi.bi-telephone-fill{
     color:white;
     
 }
-
-/* .bi.bi-telephone-fill.span{
-    background-color: white;
-
-} */
-
-/* .starsam > img{
-    width: 215px; 
-    height: 135px;
-} */
 
 .bi.bi-star-fill{
     color: var(--orange);
@@ -1404,7 +1069,6 @@ list-inline-item{
     color:var(--text-blue-solid);
 }
 
-
 .uzbekistan{
     text-align: center;
     text-transform: uppercase;
@@ -1413,18 +1077,11 @@ list-inline-item{
 }
 
 
-section p{
-    font-size: 19px;
-    
-}
-
 .uzblue{
     background-color:var(--light-blue);
     padding:5%;
     border-top-left-radius: 75px;
 }
-
-
 
 .infoicon-span{ 
     /* display: inline-block; */
@@ -1438,13 +1095,11 @@ section p{
     
 }
 
-
 .information{
     background-color:var(--light-blue);
     padding:2%;
     margin-top: 25px;
 }
-
 
 .tourtitle{
     text-align: center;
@@ -1453,14 +1108,12 @@ section p{
     font-weight: bold;
 }
 
-
 .toursubtitle{
     text-align: center;
     color:var(--text-black);
     /* text-transform: uppercase; */
     font-weight: bold;
 }
-
 
 .card-body-tours{
     padding:25px;
@@ -1493,11 +1146,6 @@ section p{
     padding-bottom: 50%;
 }
 
-/* 
-.pagination > li.page-item {
-    margin-left: 27px; 
-} */
-
 .pagination .page-item .page-link{
     color: gray; 
     border: none;
@@ -1512,147 +1160,135 @@ section p{
     height: 40px; 
     text-align: center; 
 }
+@media(max-width: 990px) {
+    .bg-image-banner{
+       display: none;
+    }
+    .bg-lg-section{
+        background: url('../images/home-page/bg-image.png') no-repeat center/cover;
+    }
+    .mt-custom{
+        margin-top: 30px;
+    }
+    
+}
 
 
-
-
-/* 
-@media only screen and (max-width: 600px) {
-    .nav-item {
-        margin-left: 15px;
+@media (max-width: 600px) {
+    
+    body{
+        overflow-x: hidden;
     }
 
-    .nav-link {
-        font-size: 16px;
+
+    h1, h2, h3, h4 {
+        font-size: 24px !important;
+    }
+
+
+    p .fs-5 {
+        font-size: 12px !important;
+    }
+
+    .breadcrumb-item {
+        color: var(--light-black);
+    }
+
+    .bg_mob_index {
+        background-image: url(../images/indexNew/bg_mob_index.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 600px;
+        position: relative;
+    }
+
+    .bg_prmr_mob {
+        background-image: url(../images/indexNew/bg_prmr_mob.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        width: 90%;
+        flex-direction: column;
+        height: 70%;
+        position: absolute;
+        top: -58px;
+        left: 22px;
     }
 
     .btn {
+        font-size: 16px;
         padding: 10px 20px;
     }
 
-    .centralasia-section .btn.btn-primary {
-        width: 200px;
+    
+    .card-img-overlay {
+        position: absolute;
+        width: 100%;
+        height: 41%;
+        justify-content: center;
+        background-color: rgba(0, 0, 0, 0.3);
+        color: white;
+        margin-left: 0%;
+        margin-top: 275px;
+        padding: 13px;
+    }
+    .gallery {
+        position: absolute;
+        left: -15px;
+        top: 216px;
+        z-index: 1;
     }
 
-    .round-button {
-        padding: 10px 20px;
-        font-size: 1em;
-        margin-left: 0;
+    
+    .gallery img {
+        width: 492px;
+        height: 70px;
+        margin-left: 23px;
+        margin-top: 70px;
+    }
+    
+    .gallery .text-overlay {
+        position: absolute;
+        top: 71px;
+        width: 372px;
+        height: 70px;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        z-index: 1;
     }
 
-    .benefit {
-        padding: 30px;
-        height: auto;
+    
+    
+    .prev-btn  {
+        position: absolute;
+        border: none;
+        background-color: transparent;
+        font-size: 2rem;
+        color: #003366; 
+        z-index: 10;
     }
 
-    .tourtitle {
-        font-size: 18px;
+
+    .next-btn {
+        position: absolute;
+        border: none;
+        background-color: transparent;
+        font-size: 2rem;
+        color: #003366; 
+        z-index: 10;
+    }
+    
+    .prev:hover, .next:hover {
+        color: #0056b3; /* Цвет при наведении */
+    }
+    
+    .card-tour{
+        width: 100%;
+        bottom: 0;
     }
 
-    .toursubtitle {
-        font-size: 16px;
-    }
 
-    .card-body-tours > h5 {
-        font-size: 16px;
-    }
 
-    .pagination .page-item.active .page-link {
-        width: 30px;
-        height: 30px;
-    }
-} */
-
-/* Medium devices (landscape tablets, 600px to 900px) */
-/* @media only screen and (min-width: 601px) and (max-width: 900px) {
-    .nav-item {
-        margin-left: 20px;
-    }
-
-    .nav-link {
-        font-size: 17px;
-    }
-
-    .btn {
-        padding: 11px 22px;
-    }
-
-    .centralasia-section .btn.btn-primary {
-        width: 220px;
-    }
-
-    .round-button {
-        padding: 12px 25px;
-        font-size: 1.1em;
-    }
-
-    .benefit {
-        padding: 45px;
-        height: auto;
-    }
-
-    .tourtitle {
-        font-size: 20px;
-    }
-
-    .toursubtitle {
-        font-size: 18px;
-    }
-
-    .card-body-tours > h5 {
-        font-size: 18px;
-    }
-
-    .pagination .page-item.active .page-link {
-        width: 35px;
-        height: 35px;
-    }
-} */
-
-/* Large devices (laptops/desktops, 900px and above) */
-/* @media only screen and (min-width: 901px) {
-    .nav-item {
-        margin-left: 31px;
-    }
-
-    .nav-link {
-        font-size: 18px;
-    }
-
-    .btn {
-        padding: 13.1px 24.1px;
-    }
-
-    .centralasia-section .btn.btn-primary {
-        width: 250px;
-    }
-
-    .round-button {
-        padding: 15px 30px;
-        font-size: 1.2em;
-        margin-left: 50px;
-    }
-
-    .benefit {
-        padding: 60px;
-        height: 450px;
-    }
-
-    .tourtitle {
-        font-size: 22px;
-    }
-
-    .toursubtitle {
-        font-size: 20px;
-    }
-
-    .card-body-tours > h5 {
-        font-size: 20px;
-    }
-
-    .pagination .page-item.active .page-link {
-        width: 40px;
-        height: 40px;
-    }
-} */
-
+}
