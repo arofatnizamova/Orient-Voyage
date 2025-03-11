@@ -209,6 +209,14 @@ a{
     z-index: 5;
     position: absolute;
 }
+.nav-link{
+    transition: all 0.3s ease;
+}
+.nav-link:hover{
+    font-weight: bold;
+    color: var(--color-corp);
+    text-decoration: underline;
+}
 
 /* old styles*/
 .offers-section-box h6{
@@ -634,15 +642,7 @@ a{
     font-size: 2.5rem;
 }
 
-.nav-item{
-    margin-left: 31px;
-    /* color:#242424; */
-} 
 
-.nav-link{
-    color: var(--text-blue);
-    font-size: 18px;
-}
 
 .navbar-nav .nav-link.active{
     color: var(--text-blue-solid);

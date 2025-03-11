@@ -84,9 +84,29 @@ $(document).ready(function () {
     slider.slick($.extend({}, extraOptions, options ));
   })
   AOS.init();
+  function setImageSizes() {
+    document.querySelectorAll('.gallery a').forEach(link => {
+        const img = new Image();
+        img.src = link.href;
+
+        img.onload = function () {
+            link.setAttribute('data-pswp-width', img.naturalWidth);
+            link.setAttribute('data-pswp-height', img.naturalHeight);
+        };
+        console.log('it works')
+    });
+}
+console.log('it works')
+// Вызываем функцию для установки размеров перед инициализацией галереи
+setImageSizes();
+    const lightbox = new PhotoSwipeLightbox({
+    gallery: ".gallery",
+    children: "a",
+    pswpModule: PhotoSwipe
+    });
+    lightbox.on('uiRegister', function() {
+        lightbox.pswp.options.zoom = false; // Отключает зум
+        });
+
+    lightbox.init();
 })
-
-
-
-
- // JavaScript to handle pagination
