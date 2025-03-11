@@ -14,12 +14,10 @@
     --gray-blue: #64748B;
     --color-corp: #133875;
     --color-dirty-gray: #585858;
+    --shadow:  5px 4px 27px 0 rgba(0, 95, 160, 0.3);
 }
 
 
-
-/* /////////////////////////////// */
-/* edited on 30th Nov, 2dec, 10dec  */
 
 body {
     overflow-x: hidden;
@@ -87,6 +85,10 @@ a{
 }
 .fs-span{
     font-size: clamp(0.75rem, 0.6rem + 0.75vw, 1.5rem);
+}
+
+.box-shadow{
+    box-shadow: var(--shadow);
 }
 .btn {
     padding: clamp(10px, 2vw, 25px) clamp(16px, 5vw, 85px) !important;
@@ -176,6 +178,21 @@ a{
     z-index:10;
 }
 
+.icon-bg-yellow{
+    background: var(--orange);
+    color: white;
+    padding: 7px 9px 5px;
+    border-radius: 50%;
+}
+
+.slick-dots li button:before{
+    font-size: 18px;
+}
+.slick-dots li.slick-active button:before {
+    color: var(--color-corp);
+    opacity: 1;
+}
+
 .gallery img {
     width: 492px;
     height: 70px;
@@ -190,14 +207,17 @@ a{
     /* left: -60px; */
     width: 372px;
     height: 70px;
-    display: flex
-;
+    display: flex;
     align-items: center;
     justify-content: start;
     z-index: 1;
 }
-
-
+.offers-section-box h6{
+    font-size: 22px;
+}
+.offers-section-box p{
+    font-size: 16px;
+}
 .card-tour {
     position: absolute;
     left: 50%;
@@ -244,25 +264,6 @@ a{
     left: 50%;
     transform: translateX(-50%);
 }
-
-
-
-.slider > button {
-    color: var(--background-color-left);
-    background-color: #fff;
-    border: none;
-    cursor: pointer;
-    z-index: 10;
-   
-}
-
-.btn-warning {
-    background-color: var(--orange);
-    /* border: none;
-    font-size: 16px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); */
-}
-
 
 
 .sidebar {
@@ -315,7 +316,9 @@ a{
 .text-white {
     color: var(--text-white);
 }
-
+.text-light-black{
+    color: var(--text-black);
+}
 
 .text-blue {
     color: var(--text-blue)!important;
@@ -1287,6 +1290,12 @@ list-inline-item{
     .card-tour{
         width: 100%;
         bottom: 0;
+    }
+    .offers-section-box h6{
+        font-size: 20px;
+    }
+    .offers-section-box p{
+        font-size: 16px;
     }
 
 
