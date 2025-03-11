@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Proza+Libre:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap');
 
-
 :root{
     --background-color:#A1A1A1;
     --text-black:#242424;
@@ -15,9 +14,8 @@
     --color-corp: #133875;
     --color-dirty-gray: #585858;
     --shadow:  5px 4px 27px 0 rgba(0, 95, 160, 0.3);
+    --color-opacity-white: rgba(255, 255, 255, 0.3);
 }
-
-
 
 body {
     overflow-x: hidden;
@@ -86,7 +84,9 @@ a{
 .fs-span{
     font-size: clamp(0.75rem, 0.6rem + 0.75vw, 1.5rem);
 }
-
+.w-fit-content{
+    width: fit-content;
+}
 .box-shadow{
     box-shadow: var(--shadow);
 }
@@ -142,8 +142,17 @@ a{
 .text-dirty-grey{
     color: var(--color-dirty-gray);
 }
+.text-corp{
+    color: var(--color-corp);
+}
 .bg-benefit{
     background: var(--benefit-color);
+}
+.bg-corp{
+    background: var(--color-corp);
+}
+.bg-opacity-white{
+    background: var(--color-opacity-white);
 }
 .mt-custom{
     margin-top: 250px;
@@ -171,12 +180,6 @@ a{
     outline: 1px solid var(--color-corp);
 }
 
-.gallery{
-    position: absolute;
-    left:0;
-    top:250px; 
-    z-index:10;
-}
 
 .icon-bg-yellow{
     background: var(--orange);
@@ -192,26 +195,22 @@ a{
     color: var(--color-corp);
     opacity: 1;
 }
-
-.gallery img {
-    width: 492px;
-    height: 70px;
-    margin-left: 23px;
-    margin-top: 70px;
-    /* background-color: rgba(0, 0, 0, 0.3); */
-}
-
-.gallery .text-overlay {
+.gallery-slider-left{
+    top: 50%;
+    transform: translateY(-50%);
+    left: -3%;
+    z-index: 5;
     position: absolute;
-    top: 71px;
-    /* left: -60px; */
-    width: 372px;
-    height: 70px;
-    display: flex;
-    align-items: center;
-    justify-content: start;
-    z-index: 1;
 }
+.gallery-slider-right{
+    top: 50%;
+    transform: translateY(-50%);
+    right: -3%;
+    z-index: 5;
+    position: absolute;
+}
+
+/* old styles*/
 .offers-section-box h6{
     font-size: 22px;
 }
@@ -236,12 +235,24 @@ a{
     box-shadow: none;
     border: none;
 }
-
-.slick-prev, .slick-next {
-    z-index: 1000;
-    display: block !important;
+.photo-box {
+    position: absolute;
+    padding: 0 14px;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 40px;
+    right: 10px;
+    top: 10px;
 }
-
+.gallery-phtoto-span {
+    font-size: 13px;
+}
+.gallery-link{
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 5%;
+    background: rgba(19, 56, 117, 0.7);
+    width: 90%;
+}
 .bg-index {
     position: absolute;
     top: 0;
@@ -296,19 +307,6 @@ a{
 .bg-image {
     background: url('../images/indexNew/main-image.jpg') no-repeat center center;
     background-size: cover;
-}
-
-/* Правая колонка */
-.bg-primary {
-    background-color: #002f5f;
-    padding: 40px;
-}
-
-.btn-warning {
-    background-color: var(--orange);
-    border: none;
-    font-size: 16px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 
@@ -679,7 +677,6 @@ a{
     display: inline-block;
     width: 40px;
     height: 40px; 
-    background-color: #133875; 
     border-radius: 50%; 
     text-align: center; 
     line-height: 40px; 
@@ -1023,10 +1020,10 @@ list-inline-item{
     margin-right: 10px;
 }
 
-.bg-corp{
+/* .bg-corp{
     background-color:var(--background-color-left);
     height: 25vh;
-}
+} */
 
 .list-inline > li{
     color:white;
@@ -1175,7 +1172,21 @@ list-inline-item{
     }
     
 }
-
+@media(max-width: 768px){
+    .gallery-slider-left, .gallery-slider-right{
+        right: unset;
+        left: unset;
+        transform: unset;
+        top: unset;
+        position: static;
+    }
+    .slider-btn-box-2{
+        position:absolute;
+        z-index: 5;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
 
 @media (max-width: 600px) {
     
@@ -1236,34 +1247,7 @@ list-inline-item{
         margin-top: 275px;
         padding: 13px;
     }
-    .gallery {
-        position: absolute;
-        left: -15px;
-        top: 216px;
-        z-index: 1;
-    }
 
-    
-    .gallery img {
-        width: 492px;
-        height: 70px;
-        margin-left: 23px;
-        margin-top: 70px;
-    }
-    
-    .gallery .text-overlay {
-        position: absolute;
-        top: 71px;
-        width: 372px;
-        height: 70px;
-        display: flex;
-        align-items: center;
-        justify-content: start;
-        z-index: 1;
-    }
-
-    
-    
     .prev-btn  {
         position: absolute;
         border: none;
