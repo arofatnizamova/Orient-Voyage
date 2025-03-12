@@ -1200,16 +1200,6 @@ list-inline-item{
         overflow-x: hidden;
     }
 
-
-    h1, h2, h3, h4 {
-        font-size: 24px !important;
-    }
-
-
-    p .fs-5 {
-        font-size: 12px !important;
-    }
-
     .breadcrumb-item {
         color: var(--light-black);
     }
