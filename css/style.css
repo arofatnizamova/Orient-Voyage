@@ -263,9 +263,9 @@ a{
     background: rgba(19, 56, 117, 0.7);
     width: 90%;
 }
-
-
-
+.swiper-button-next:after, .swiper-button-prev:after {
+    display: none;
+}
 /* old styles*/
 .bg-index {
     position: absolute;

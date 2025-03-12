@@ -93,10 +93,8 @@ $(document).ready(function () {
             link.setAttribute('data-pswp-width', img.naturalWidth);
             link.setAttribute('data-pswp-height', img.naturalHeight);
         };
-        console.log('it works')
     });
 }
-console.log('it works')
 // Вызываем функцию для установки размеров перед инициализацией галереи
 setImageSizes();
     const lightbox = new PhotoSwipeLightbox({
@@ -109,4 +107,25 @@ setImageSizes();
         });
 
     lightbox.init();
+
+    var thumbsSwiper = new Swiper(".thumbs-slider", {
+      direction: "vertical",
+      loop: true, // Вертикальное расположение миниатюр
+      slidesPerView: 3, // Показываем 3 миниатюры одновременно
+      spaceBetween: 10,
+      watchSlidesProgress: true,
+      freeMode: true,
+    });
+
+    var mainSwiper = new Swiper(".main-slider", {
+      spaceBetween: 10,
+      loop: true,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      thumbs: {
+        swiper: thumbsSwiper,
+      },
+    });
 })
