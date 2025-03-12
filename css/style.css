@@ -15,6 +15,7 @@
     --color-dirty-gray: #585858;
     --shadow:  5px 4px 27px 0 rgba(0, 95, 160, 0.3);
     --color-opacity-white: rgba(255, 255, 255, 0.3);
+    --light-blue: #E9F1FF;
 }
 
 body {
@@ -154,6 +155,9 @@ a{
 .bg-opacity-white{
     background: var(--color-opacity-white);
 }
+.bg-light-blue{
+    background: var(--light-blue);
+}
 .mt-custom{
     margin-top: 250px;
 }
@@ -217,8 +221,6 @@ a{
     color: var(--color-corp);
     text-decoration: underline;
 }
-
-/* old styles*/
 .offers-section-box h6{
     font-size: 22px;
 }
@@ -261,6 +263,10 @@ a{
     background: rgba(19, 56, 117, 0.7);
     width: 90%;
 }
+
+
+
+/* old styles*/
 .bg-index {
     position: absolute;
     top: 0;
