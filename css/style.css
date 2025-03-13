@@ -12,11 +12,13 @@
     --text-gray: #424242;
     --gray-blue: #64748B;
     --color-corp: #133875;
+    --color-light-corp: #015FA0;
     --color-dirty-gray: #585858;
     --shadow:  5px 4px 27px 0 rgba(0, 95, 160, 0.3);
     --color-opacity-white: rgba(255, 255, 255, 0.3);
     --color-opacity-blue: rgba(0, 95, 160, 0.09);
     --light-blue: #E9F1FF;
+    --light-milk: #F5F5F5;
 }
 
 body {
@@ -134,7 +136,24 @@ a{
     background: #F69F00;
     box-shadow: 0px 4px 0px #b26b00;;
 }
-
+.btn-blue {
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 18px;
+    padding: 8px 40px;
+    border: none;
+    border-radius: 0;
+    width: fit-content;
+    background: var(--color-light-corp);
+    box-shadow: none;
+}
+.btn-blue:hover{
+    box-shadow: none;
+    background: transparent;
+    outline: 2px solid var(--color-light-corp);
+    color: var(--color-light-corp);
+    border: none;
+}
 .aside-link{
     transition: all 0.3s ease;
     position: relative;
@@ -162,6 +181,9 @@ a{
 .text-corp{
     color: var(--color-corp);
 }
+.text-light-corp{
+    color: var(--color-light-corp);
+}
 .bg-benefit{
     background: var(--benefit-color);
 }
@@ -176,6 +198,9 @@ a{
 }
 .bg-light-blue{
     background: var(--light-blue);
+}
+.bg-milk{
+    background: var(--light-milk);
 }
 .mt-custom{
     margin-top: 250px;
@@ -1216,12 +1241,15 @@ list-inline-item{
 }
 
 .pagination .page-item.active .page-link {
-    background-color: #0056b3; 
-    color: white; 
-    border-radius: 50%; 
+    background-color: var(--light-milk); 
+    color: var(--color-light-corp); 
+    border-radius: 0;
     width: 40px; 
     height: 40px; 
     text-align: center; 
+}
+.page-link:focus{
+    box-shadow: none;
 }
 @media(max-width: 990px) {
     .bg-image-banner{
@@ -1340,6 +1368,9 @@ list-inline-item{
     }
     .offers-section-box p{
         font-size: 16px;
+    }
+    .btn-blue{
+        font-size: 14px;
     }
 
 
