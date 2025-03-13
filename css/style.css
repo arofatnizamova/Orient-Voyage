@@ -15,6 +15,7 @@
     --color-dirty-gray: #585858;
     --shadow:  5px 4px 27px 0 rgba(0, 95, 160, 0.3);
     --color-opacity-white: rgba(255, 255, 255, 0.3);
+    --color-opacity-blue: rgba(0, 95, 160, 0.09);
     --light-blue: #E9F1FF;
 }
 
@@ -27,6 +28,18 @@ body {
 a{
     color: inherit;
     text-decoration: none;
+}
+.one-line {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.four-line{
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 .bg-image-banner{
     position: absolute;
@@ -78,6 +91,9 @@ a{
 }
 .fs-paragraph-3{
     font-size: clamp(0.875rem, 0.8rem + 0.375vw, 1.25rem);
+}
+.fs-paragraph-4{
+    font-size: clamp(0.75rem, 0.675rem + 0.375vw, 1.125rem);
 }
 .fs-number{
     font-size: clamp(0.75rem, 0.125rem + 3.125vw, 3.875rem);
@@ -154,6 +170,9 @@ a{
 }
 .bg-opacity-white{
     background: var(--color-opacity-white);
+}
+.bg-opacity-blue{
+    background: var(--color-opacity-blue);
 }
 .bg-light-blue{
     background: var(--light-blue);
@@ -266,6 +285,44 @@ a{
 .swiper-button-next:after, .swiper-button-prev:after {
     display: none;
 }
+.container-slider {
+    display: flex;
+    margin: auto;
+    align-items: center;
+    height: 500px;
+  }
+
+  /* Миниатюры */
+  .thumbs-slider {
+    width: 23%;
+    height: 100%;
+  }
+
+  .thumbs-slider .swiper-slide {
+    opacity: 0.6;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .thumbs-slider .swiper-slide img {
+    width: 100%;
+  }
+
+  .thumbs-slider .swiper-slide-thumb-active {
+    opacity: 1;
+  }
+
+  /* Основной слайдер */
+  .main-slider {
+    width: 70%;
+    height: 100%;
+  }
+
+  .swiper-slide img {
+    width: 100%;
+  }
 /* old styles*/
 .bg-index {
     position: absolute;
@@ -1175,6 +1232,13 @@ list-inline-item{
     }
     .mt-custom{
         margin-top: 30px;
+    }
+    .main-slider {
+        width: 100%;
+        height: 100%;
+    }
+    .container-slider {
+        height: unset;
     }
     
 }

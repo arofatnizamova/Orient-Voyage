@@ -110,8 +110,8 @@ setImageSizes();
 
     var thumbsSwiper = new Swiper(".thumbs-slider", {
       direction: "vertical",
-      loop: true, // Вертикальное расположение миниатюр
-      slidesPerView: 3, // Показываем 3 миниатюры одновременно
+      loop: true, 
+      slidesPerView: 3, 
       spaceBetween: 10,
       watchSlidesProgress: true,
       freeMode: true,
@@ -127,5 +127,21 @@ setImageSizes();
       thumbs: {
         swiper: thumbsSwiper,
       },
+      breakpoints: {
+        990: {
+          navigation : {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+          pagination: false,
+        },
+        0: {
+          navigation: false,
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          }
+        }
+      }
     });
 })
