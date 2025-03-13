@@ -97,6 +97,9 @@ a{
 .fs-paragraph-4{
     font-size: clamp(0.75rem, 0.675rem + 0.375vw, 1.125rem);
 }
+.fs-paragraph-5{
+    font-size: clamp(0.75rem, 0.7rem + 0.25vw, 1rem);
+}
 .fs-number{
     font-size: clamp(0.75rem, 0.125rem + 3.125vw, 3.875rem);
 }
@@ -204,6 +207,9 @@ a{
 }
 .mt-custom{
     margin-top: 250px;
+}
+.h-sm-limit{
+    height: 300px;
 }
 .slider-btn-box-1{
     right: 0;
@@ -348,19 +354,7 @@ a{
   .swiper-slide img {
     width: 100%;
   }
-/* old styles*/
-.bg-index {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 50%;
-    height: 100%;
-    background: url('../images/indexNew/bg-index.png') no-repeat center center;
-    background-size: cover;
-    z-index: -1;
-} 
-
-.bg-blue {
+  .bg-blue {
     background-image: url('../images/indexNew/bg-blue.png');
     background-repeat: no-repeat;
     background-size: cover; 
@@ -371,6 +365,15 @@ a{
     left: 50%;
     transform: translateX(-50%);
 }
+/* Центральная часть */
+.bg-image {
+    background: url('../images/indexNew/main-image.jpg') no-repeat center center;
+    background-size: cover;
+}
+/* old styles*/
+
+
+
 
 
 .sidebar {
@@ -399,11 +402,7 @@ a{
     font-size: 30px!important;
 }
 
-/* Центральная часть */
-.bg-image {
-    background: url('../images/indexNew/main-image.jpg') no-repeat center center;
-    background-size: cover;
-}
+
 
 
 

@@ -80,6 +80,40 @@ $(document).ready(function () {
                     },
           ]
       }
+    }else if (slider.hasClass('bus')) {
+      extraOptions = {
+        slidesToShow: 2.8,
+          slidesToScroll: 1,
+          centerMode: false,
+          arrows: true,
+          dots: false,
+          autoPlay: true,
+          responsive: [
+            {
+              breakpoint: 1200,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1,
+              }
+            },
+            {
+              breakpoint: 992,
+              settings: {
+                slidesToShow: 1.5,
+                slidesToScroll: 1,
+              }
+            },
+            {
+              breakpoint: 576,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                arrows: false,
+                dots: true
+              }
+                    },
+          ]
+      }
     }
     slider.slick($.extend({}, extraOptions, options ));
   })
