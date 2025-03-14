@@ -15,6 +15,7 @@
     --color-light-corp: #015FA0;
     --color-dirty-gray: #585858;
     --shadow:  5px 4px 27px 0 rgba(0, 95, 160, 0.3);
+    --shadow-blue: 0 4px 10px 0 rgba(0, 95, 160, 0.24);
     --color-opacity-white: rgba(255, 255, 255, 0.3);
     --color-opacity-blue: rgba(0, 95, 160, 0.09);
     --light-blue: #E9F1FF;
@@ -109,8 +110,15 @@ a{
 .w-fit-content{
     width: fit-content;
 }
+.card {
+    box-shadow: none;
+    border: none;
+}
 .box-shadow{
     box-shadow: var(--shadow);
+}
+.box-shadow-blue{
+    box-shadow: var(--shadow-blue);
 }
 .btn {
     padding: clamp(10px, 2vw, 25px) clamp(16px, 5vw, 85px) !important;
@@ -299,10 +307,6 @@ a{
 .card-tour:hover{
     background: rgba(255, 153, 0, 0.65);
 }
-.card {
-    box-shadow: none;
-    border: none;
-}
 .photo-box {
     position: absolute;
     padding: 0 14px;
@@ -320,6 +324,9 @@ a{
     bottom: 5%;
     background: rgba(19, 56, 117, 0.7);
     width: 90%;
+}
+.gallery-link p{
+    font-size: clamp(1rem, 0.9rem + 0.5vw, 1.5rem);
 }
 .swiper-button-next:after, .swiper-button-prev:after {
     display: none;
@@ -440,6 +447,9 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 .form-check-input:focus{
     box-shadow: none;
+}
+.slick-dots{
+    bottom: -40px;
 }
 /* old styles*/
 
@@ -1283,12 +1293,6 @@ list-inline-item{
     color:var(--text-blue-solid);
 }
 
-.icon-spacing{
-    padding: 5px;
-    color:var(--background-color-left);
-    font-weight: bold;
-}
-
 .price{
     margin-left: 6px;
     font-weight: 500;
@@ -1298,11 +1302,6 @@ list-inline-item{
     color:var(--text-blue-solid);
 }
 
-.bi.bi-arrow-right-circle-fill{
-    padding-left: 60%;
-    color:#005FA0;
-    padding-bottom: 50%;
-}
 
 .pagination .page-item .page-link{
     color: gray; 
