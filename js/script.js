@@ -178,4 +178,20 @@ setImageSizes();
         }
       }
     });
+
+    $(".increment").click(function () {
+      let input = $(this).siblings("input");
+      let value = parseInt(input.val(), 10);
+      if (!isNaN(value)) {
+          input.val(value + 1);
+      }
+  });
+
+  $(".decrement").click(function () {
+      let input = $(this).siblings("input");
+      let value = parseInt(input.val(), 10);
+      if (!isNaN(value) && value > parseInt(input.attr("min") || 1, 10)) {
+          input.val(value - 1);
+      }
+  });
 })
