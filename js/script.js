@@ -194,4 +194,40 @@ setImageSizes();
           input.val(value - 1);
       }
   });
+
+  $(function() {
+    let datePicker = $('#dateRangePicker');
+
+    datePicker.daterangepicker({
+        autoUpdateInput: false,
+        locale: {
+            format: 'DD.MM.YYYY',
+            applyLabel: "Выбрать",
+            cancelLabel: "Отмена",
+            fromLabel: "С",
+            toLabel: "По",
+            customRangeLabel: "Свой диапазон"
+        }
+    });
+
+    // Изменяем классы кнопок после появления календаря
+    datePicker.on('show.daterangepicker', function(ev, picker) {
+        setTimeout(() => {
+            $('.applyBtn').removeClass('btn-primary').addClass('btn-blue');
+            $('.cancelBtn').removeClass('btn-default').addClass('btn-blue');
+        }, 10);
+    });
+
+    // Обновляем значение в инпуте при выборе
+    datePicker.on('apply.daterangepicker', function(ev, picker) {
+        $(this).val(picker.startDate.format('DD.MM.YYYY') + ' - ' + picker.endDate.format('DD.MM.YYYY'));
+    });
+
+    // Если отмена – возвращаем placeholder
+    datePicker.on('cancel.daterangepicker', function() {
+        $(this).val('');
+        datePicker.attr('placeholder', "Dates");
+    });
+});
+
 })

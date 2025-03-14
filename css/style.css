@@ -771,13 +771,14 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
 .table {
     border: none!important;
+    --bs-table-bg: unset;
 }
 .table th, .table td {
     border: none!important;
 }
-
-.table {
-    background-color: transparent !important;
+.table>:not(caption)>*>* {
+    padding: 10px 20px;
+    color: unset;
 }
 
 
@@ -1081,23 +1082,6 @@ list-inline-item{
     font-size: 16px;
 }
 
-.table {
-    width: 100%;
-    border-collapse: collapse;
-    background-color: #e6f2ff;
-    margin-bottom: 20px;
-}
-
-.table th,
-.table td {
-    border: 1px solid #b3d9ff;
-    padding: 10px;
-    text-align: left;
-}
-
-.table thead {
-    background-color: #cce6ff;
-}
 
 .note {
     font-style: italic;
