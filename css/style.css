@@ -451,6 +451,59 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 .slick-dots{
     bottom: -40px;
 }
+.accordion-button:not(.collapsed) {
+    background: transparent;
+    color: var(--color-light-corp);
+}
+.accordion-button{
+    background: var(--color-light-corp);
+    color: white;
+}
+.accordion-button:focus{
+    box-shadow: none;
+}
+.accordion-button::after{
+    filter: contrast(0%) brightness(2);
+}
+.accordion-button:not(.collapsed)::after{
+    filter: unset;
+}
+.accordion-item{
+    background: var(--color-opacity-blue);
+}
+.accordion-item:first-of-type>.accordion-header .accordion-button {
+    border-top-left-radius: unset;
+    border-top-right-radius: unset;
+}
+.accordion-item:last-of-type>.accordion-header .accordion-button.collapsed {
+    border-bottom-right-radius: unset;
+    border-bottom-left-radius: unset;
+}
+.accordion-item:last-of-type>.accordion-collapse {
+    border-bottom-right-radius: unset;
+    border-bottom-left-radius: unset;
+}
+.accordion{
+    --bs-accordion-border-color: unset;
+    --bs-accordion-border-radius: unset;
+    border: none;
+}
+.list-underline{
+    position: relative;
+}
+.list-underline::before{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 2px;
+    background: var(--color-light-corp);
+}
+.orange.list-underline::before{
+    background: var(--orange);
+    height: 3px;
+}
 /* old styles*/
 
 
