@@ -850,10 +850,10 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 .table th, .table td {
     border: none!important;
 }
-.table>:not(caption)>*>* {
+/* .table>:not(caption)>*>* {
     padding: 10px 20px;
     color: unset;
-}
+} */
 
 
 .prv-btn  {
@@ -1378,6 +1378,7 @@ list-inline-item{
 .page-link:focus{
     box-shadow: none;
 }
+
 @media(max-width: 1400px){
     .corp-window{
         position: static;
