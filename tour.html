@@ -124,7 +124,7 @@
                   </nav>
             </div>
         </div>
-        <section class="py-lg-5 py-3">
+        <section class="pt-lg-5 pt-3">
             <div class="container-fluid">
                 <h3 class="text-uppercase text-orange fs-section-title fw-bold">
                     tour
@@ -162,9 +162,52 @@
                         </div>
                     </div>
                     <div class="col-lg-4">
-                        <div class="w-100 h-100 px-lg-5 px-4 py-4 d-flex bg-opacity-blue  flex-column">
-                            <div class="">
-                                <p class="fw-bold fs-paragraph-2">Negotiated price</p>
+                        <div class="w-100 h-100 px-lg-5 px-4 py-4 d-flex bg-opacity-blue  flex-column justify-content-center">
+                            <div class="row justify-content-center gx-0">
+                                <div class="col-xxl-10">
+                                    <div class="w-100 h-100 text-lg-start text-center">
+                                        <p class="fw-bold fs-paragraph-2">Negotiated price</p>
+                                        <p class="">Price depends on group size</p>
+                                        <p class="fw-bold">Select date and travelers</p>
+                                        <form action="">
+                                            <div class="w-100 h-100 mb-4">
+                                                <input type="text" id="dateRangePicker" class="form-control form-control-thin" placeholder="Dates">
+                                            </div>
+                                            <div class="w-100 h-100">
+                                                <input type="number" class="form-control form-control-thin" placeholder="Num.of people">
+                                            </div>
+                                            <button type="submit" class="btn-blue mt-4 mx-lg-0 mx-auto d-block">
+                                                Send request
+                                            </button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-lg-5 mt-3 gx-0 justify-content-center">
+                    <div class="col-lg-10">
+                        <div class="w-100 h-100 border-corp py-3 text-gray">
+                            <div class="row gx-0 w-100 justify-content-center gy-4">
+                                <div class="col-lg-3">
+                                    <div class="w-100 h-100 d-flex flex-lg-row flex-column align-items-center justify-content-center">
+                                        <i class="bi bi-clock text-orange fs-2 me-2"></i>
+                                        <p class="mb-0 fs-paragraph-4 fw-bold">5 hours (approx.)</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="w-100 h-100 d-flex flex-lg-row flex-column align-items-center justify-content-center">
+                                        <i class="bi bi-car-front text-orange fs-2 me-2"></i>
+                                        <p class="mb-0 fs-paragraph-4 fw-bold">Hotel pick-up available</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="w-100 h-100 d-flex flex-lg-row flex-column align-items-center justify-content-center">
+                                        <i class="bi bi-phone text-orange fs-2 me-2"></i>
+                                        <p class="mb-0 fs-paragraph-4 fw-bold">Mobile ticket</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -282,62 +325,66 @@
                 <div class="row gy-4">
                     <div class="col-lg-5">
                         <div class="w-100 h-100 border text-gray ">
-                            <table class="table fs-paragraph-4">
-                                <thead class="text-uppercase bg-opacity-blue">
-                                  <tr>
-                                    <th scope="col">№ of persons</th>
-                                    <th scope="col">prices </th>
-                                  </tr>
-                                </thead>
-                                <tbody>
-                                  <tr>
-                                    <td>2</td>
-                                    <td>$688</td>
-                                  </tr>
-                                  <tr>
-                                    <td>4</td>
-                                    <td>$688</td>
-                                  </tr>
-                                  <tr>
-                                    <td>6</td>
-                                    <td>$688</td>
-                                  </tr>
-                                  <tr>
-                                    <td>Single room supplement</td>
-                                    <td>$140</td>
-                                  </tr>
-                                </tbody>
-                              </table>
+                            <div class="table-responsive">
+                                <table class="table fs-paragraph-4">
+                                    <thead class="text-uppercase bg-opacity-blue">
+                                      <tr>
+                                        <th scope="col">№ of persons</th>
+                                        <th scope="col">prices </th>
+                                      </tr>
+                                    </thead>
+                                    <tbody>
+                                      <tr>
+                                        <td>2</td>
+                                        <td>$688</td>
+                                      </tr>
+                                      <tr>
+                                        <td>4</td>
+                                        <td>$688</td>
+                                      </tr>
+                                      <tr>
+                                        <td>6</td>
+                                        <td>$688</td>
+                                      </tr>
+                                      <tr>
+                                        <td>Single room supplement</td>
+                                        <td>$140</td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                            </div>
                         </div>
                     </div>
                     <div class="col-lg-7">
                         <div class="w-100 h-100 border text-gray ">
-                            <table class="table fs-paragraph-4">
-                                <thead class="text-uppercase bg-opacity-blue">
-                                  <tr>
-                                    <th scope="col">HOTELS:</th>
-                                    <th scope="col"></th>
-                                    <th scope="col"></th>
-                                  </tr>
-                                </thead>
-                                <tbody class="text-uppercase">
-                                  <tr>
-                                    <td>Tashkent</td>
-                                    <td>City Palace 4*/ similar</td>
-                                    <td>1+1 night</td>
-                                  </tr>
-                                  <tr>
-                                    <td>Bukhara</td>
-                                    <td>Omar Khayam 3*/ similar</td>
-                                    <td>2 nights</td>
-                                  </tr>
-                                  <tr>
-                                    <td>Samarkand</td>
-                                    <td>Orient Star 3*/ similar</td>
-                                    <td>1 night</td>
-                                  </tr>
-                                </tbody>
-                              </table>
+                            <div class="table-responsive">
+                                <table class="table fs-paragraph-4">
+                                    <thead class="text-uppercase bg-opacity-blue">
+                                      <tr>
+                                        <th scope="col">HOTELS:</th>
+                                        <th scope="col"></th>
+                                        <th scope="col"></th>
+                                      </tr>
+                                    </thead>
+                                    <tbody class="text-uppercase">
+                                      <tr>
+                                        <td>Tashkent</td>
+                                        <td>City Palace 4*/ similar</td>
+                                        <td>1+1 night</td>
+                                      </tr>
+                                      <tr>
+                                        <td>Bukhara</td>
+                                        <td>Omar Khayam 3*/ similar</td>
+                                        <td>2 nights</td>
+                                      </tr>
+                                      <tr>
+                                        <td>Samarkand</td>
+                                        <td>Orient Star 3*/ similar</td>
+                                        <td>1 night</td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                            </div>
                         </div>
                     </div>
                 </div>
