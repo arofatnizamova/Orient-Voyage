@@ -209,6 +209,9 @@ a{
 .bg-corp{
     background: var(--color-corp);
 }
+.bg-light-corp{
+    background: var(--color-light-corp);
+}
 .bg-opacity-white{
     background: var(--color-opacity-white);
 }
@@ -514,6 +517,13 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 .border-corp{
     border-top: 1px solid var(--color-light-corp);
     border-bottom: 1px solid var(--color-light-corp);
+}
+.corp-window{
+    width: 60%;
+    bottom: -15%;
+    right: 0;
+    z-index: 3;
+    position: absolute;
 }
 /* old styles*/
 
@@ -1367,6 +1377,12 @@ list-inline-item{
 }
 .page-link:focus{
     box-shadow: none;
+}
+@media(max-width: 1400px){
+    .corp-window{
+        position: static;
+        width: 100%;
+    }
 }
 @media(max-width: 990px) {
     .bg-image-banner{
