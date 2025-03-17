@@ -1,16 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Proza+Libre:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap');
 
 :root{
-    --background-color:#A1A1A1;
-    --text-black:#242424;
-    --text-white:#FFFFFF;
-    --text-orange:#F69F00;
     --benefit-color:#EDF2F9;
-    --light-blue:#E2E8F0;
-    --middle-blue:#005FA0;
     --orange:#F69F00;
     --text-gray: #424242;
-    --gray-blue: #64748B;
     --color-corp: #133875;
     --color-light-corp: #015FA0;
     --color-dirty-gray: #585858;
@@ -51,9 +43,7 @@ a{
     top: 0;
     z-index: -1;
     height: 100vh;
-
 }
-
 .container-fluid{
     padding: 0 clamp(10px, 3vw, 80px);
 }
@@ -72,7 +62,6 @@ a{
 .side-nav-menu{
     left: 0;
     top: 0;
-
 }
 .logo{
     width: clamp(90px, 10vw, 190px);
@@ -203,6 +192,28 @@ a{
 .text-light-corp{
     color: var(--color-light-corp);
 }
+.text-blue {
+    color: var(--text-blue)!important;
+}
+.text-orange {
+    color:var(--orange);
+}
+
+.text-gray {
+    color: var(--text-gray);
+}
+
+.bg-light-blue {
+    background-color: var(--light-blue);
+}
+
+.bg-gray {
+ background-color: rgba(255, 255, 255, 0.34);
+ 
+}
+.border-gray {
+    color:  rgba(255, 255, 255, 0.34);
+}
 .bg-benefit{
     background: var(--benefit-color);
 }
@@ -234,7 +245,6 @@ a{
     right: 0;
     top: -10%;
 }
-
 .slider-btn{
     border: none;
     border-radius: 50%;
@@ -252,7 +262,6 @@ a{
     border-radius: 50%;
     outline: 1px solid var(--color-corp);
 }
-
 
 .icon-bg-yellow{
     background: var(--orange);
@@ -512,8 +521,6 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     background: var(--orange);
     height: 3px;
 }
-
-
 .border-corp{
     border-top: 1px solid var(--color-light-corp);
     border-bottom: 1px solid var(--color-light-corp);
@@ -526,10 +533,6 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     position: absolute;
 }
 /* old styles*/
-
-
-
-
 
 .sidebar {
     /* border-right: 1px solid #e0e0e0; */
@@ -557,274 +560,6 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     font-size: 30px!important;
 }
 
-
-
-
-
-.text-white {
-    color: var(--text-white);
-}
-.text-light-black{
-    color: var(--text-black);
-}
-
-.text-blue {
-    color: var(--text-blue)!important;
-}
-
-.text-gr-blue{
-    color:var(--gray-blue);
-}
-
-.text-orange {
-    color:var(--text-orange);
-}
-
-.text-gray {
-    color: var(--text-gray);
-}
-
-.bg-light-blue {
-    background-color: var(--light-blue);
-}
-
-.border-gray {
-    color: var(--gray-blue);
-}
-
-.bg-img {
-    background: url('../images/choy.png');
-    background-repeat: no-repeat;
-    background-size: cover; 
-    background-position: center; /
-}
-
-
-.bg-taj {
-    background: url('../images/tajikistan/back.png');
-    background-repeat: no-repeat;
-    background-size: cover; 
-    background-position: center; 
-    width: 100%;
-}
-
-.bg-taj-mb {
-    background: url('../images/tajikistan/bg-taj-mg.png');
-    background-repeat: no-repeat;
-    background-size: cover; 
-    background-position: center; 
-}
-
-
-.bg-uzb {
-    background: url('../images/UzbekistanNew/back.png');
-    background-repeat: no-repeat;
-    background-size: cover; 
-    background-position: center; 
-    width: 100%;
-}
-
-.bg-uzb-mb {
-    background: url('../images/UzbekistanNew/back_mb.png');
-    background-repeat: no-repeat;
-    background-size: cover; 
-    background-position: center; 
-}
-
-
-.bg-kaz {
-    background: url('../images/kazakhstanNew/back.png');
-    background-repeat: no-repeat;
-    background-size: cover; 
-    background-position: center; 
-    width: 100%;
-}
-
-.bg-kaz-mb {
-    background: url('../images/kazakhstanNew/back_mb.png');
-    background-repeat: no-repeat;
-    background-size: cover; 
-    background-position: center; 
-}
-
-
-.bg-kyr {
-    background: url('../images/kyrgyzstanNew/back.png');
-    background-repeat: no-repeat;
-    background-size: cover; 
-    background-position: center; 
-    width: 100%;
-}
-
-.bg-kyr-mb {
-    background: url('../images/kyrgyzstanNew/back_mb.png');
-    background-repeat: no-repeat;
-    background-size: cover; 
-    background-position: center; 
-}
-
-
-
-.bg-tur {
-    background: url('../images/turkmenistanNew/back.png');
-    background-repeat: no-repeat;
-    background-size: cover; 
-    background-position: center; 
-    width: 100%;
-}
-
-
-.bg-tur-mb {
-    background: url('../images/turkmenistanNew/back_mb.png');
-    background-repeat: no-repeat;
-    background-size: cover; 
-    background-position: center; 
-}
-
-
-.bg-buh {
-    background: url('../images/bukharaNew/back.png');
-    background-repeat: no-repeat;
-    background-size: cover; 
-    background-position: center; 
-    width: 100%;
-}
-
-
-.bg-buh-mb {
-    background: url('../images/bukharaNew/back_mb.png');
-    background-repeat: no-repeat;
-    background-size: cover; 
-    background-position: center; 
-}
-
-
-.bg-tash {
-    background: url('../images/tashkentNew/back.png');
-    background-repeat: no-repeat;
-    background-size: cover; 
-    background-position: center; 
-    width: 100%;
-}
-
-
-.bg-tash-mb {
-    background: url('../images/tashkentNew/back_mn.png');
-    background-repeat: no-repeat;
-    background-size: cover; 
-    background-position: center; 
-}
-
-.bg-sam {
-    background: url('../images/samarkandNew/back.png');
-    background-repeat: no-repeat;
-    background-size: cover; 
-    background-position: center; 
-    width: 100%;
-}
-
-
-.bg-sam-mb {
-    background: url('../images/samarkandNew/back_mb.png');
-    background-repeat: no-repeat;
-    background-size: cover; 
-    background-position: center; 
-}
-
-
-.bg-khor {
-    background: url('../images/xorezmNew/back.png');
-    background-repeat: no-repeat;
-    background-size: cover; 
-    background-position: center; 
-    width: 100%;
-}
-
-
-.bg-khor-mb {
-    background: url('../images/xorezmNew/back_mb.png');
-    background-repeat: no-repeat;
-    background-size: cover; 
-    background-position: center; 
-}
-
-.bg-shax {
-    background: url('../images/shaxrisabzNew/back.png');
-    background-repeat: no-repeat;
-    background-size: cover; 
-    background-position: center; 
-    width: 100%;
-}
-
-
-.bg-shax-mb {
-    background: url('../images/shaxrisabzNew/back_mb.png');
-    background-repeat: no-repeat;
-    background-size: cover; 
-    background-position: center; 
-}
-
-
-.bg-kar {
-    background: url('../images/karakalpakstan/back.png');
-    background-repeat: no-repeat;
-    background-size: cover; 
-    background-position: center; 
-    width: 100%;
-}
-
-
-.bg-kar-mb {
-    background: url('../images/karakalpakstan/back_mb.png');
-    background-repeat: no-repeat;
-    background-size: cover; 
-    background-position: center; 
-}
-
-
-.bg-ter {
-    background: url('../images/termezNew/back.png');
-    background-repeat: no-repeat;
-    background-size: cover; 
-    background-position: center; 
-    width: 100%;
-}
-
-
-.bg-ter-mb {
-    background: url('../images/termezNew/back_mg.png');
-    background-repeat: no-repeat;
-    background-size: cover; 
-    background-position: center; 
-}
-
-.bg-fer {
-    background: url('../images/ferganaNew/back.png');
-    background-repeat: no-repeat;
-    background-size: cover; 
-    background-position: center; 
-    width: 100%;
-}
-
-
-.bg-fer-mb {
-    background: url('../images/ferganaNew/back_mb.png');
-    background-repeat: no-repeat;
-    background-size: cover; 
-    background-position: center; 
-}
-
-
-
-.bg-gray {
- background-color: rgba(255, 255, 255, 0.34);
- 
-}
-
-.border-gray {
-    color:  rgba(255, 255, 255, 0.34);
-}
-
 .list-group-item.active {
     z-index: 2;
     color: blue;
@@ -850,62 +585,6 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 .table th, .table td {
     border: none!important;
 }
-/* .table>:not(caption)>*>* {
-    padding: 10px 20px;
-    color: unset;
-} */
-
-
-.prv-btn  {
-    position: absolute;
-    border: none;
-    background-color: transparent;
-    font-size: 2rem;
-    color: var(--text-blue); 
-    z-index: 10;
-}
-
-
-.nxt-btn {
-    position: absolute;
-    border: none;
-    background-color: transparent;
-    font-size: 2rem;
-    color: var(--text-blue)!important; 
-    z-index: 10;
-}
-
-.prv:hover, .nxt:hover {
-    color: var(--text-blue); 
-}
-
-
-
-.bi-arrow-left-circle {
-    font-size: 2.5rem;
-}
-
-
-
-.navbar-nav .nav-link.active{
-    color: var(--text-blue-solid);
-    border-bottom: 1px solid var(--background-color-left);
-    font-weight: bold;
-}
-
-.breadcrumb > li {
-    color: #424242;
-}
-
-.breadcrumb > li > a {
-    text-decoration: none;
-    color: #424242;
-}
-
-.btn {
-    padding: 13.1px 24.1px;
-    font-weight: bold;
-}
 
 .btn-primary {
     background-color: var(--color-copr);
@@ -925,331 +604,24 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     line-height: 40px; 
 }
 
-.flaguk{
-    width: 40px;
-}
-
-.carousel-section {
-    position: relative;
-}
-
-.carousel-section li:nth-child(4),
-.carousel-section li:nth-child(5) {
-    color: white;
-}
-
-.carousel-section .call{
-    color:white;
-}
-
-.carousel-section .en{
-    color:white;
-}
-
-.centralasia-image{
-    width: 80%;
-    height: 100%;
-    position: relative;
-    /* z-index: 1; */
-}
-
-.centralasia-section .title{
-    font-weight: bold;
-    color:white;
-}
-
-.centralasia-section .btn.btn-primary{
-    background-color: var(--orange);
-    border-color: var(--orange);
-    margin-top: 80px;
-    width: 250px;
-}
-
-.centralasia-section .bi.bi-arrow-right{
-    color:white;
-    margin-left: -160px;
-}
-
-.centralasia-section .num{
-    color:white;
-    /* margin-left: 50px; */
-}
-
-.carousel-section:after {
-    content: "";
-    background-image: url(../images/cover-uzb.png);
-    position: absolute;
-    right: 0;
-    top: 0;
-    width: 50%;
-    height: 100%; 
-    z-index: -1;
-}
-
-.header{
-    position: absolute;
-    z-index: 1;
-}
-
-
-.centralasia-section {
-    position: relative;
-    padding: 50px 0;
-    overflow: hidden;
-}
-
-.centralasia-section::after {
-    content: "";
-    background-image: url(../images/cover-uzb.png);
-    position: absolute;
-    right: 0;
-    top: 0;
-    width: 50%;
-    height: 100%;
-    z-index: 0;
-    background-size: cover;
-    background-position: center;
-}
-
-.centralasia-section .container {
-    position: relative;
-    z-index: 1;
-}
-
-
-.tourism-span{
-    width: 55px;
-    height: 55px; 
-    background-color: var(--orange); 
-    padding: 17px;
-    color:white;
-}
-
-.about-title{
-    color:var(--text-orange);
-    font-weight: bold;
-}
-
-list-inline-item{
-    padding-left: 150px;
-}
-
-.social-items{
-    height: 500px; 
-    width: 100px; 
-    background-color: var(--background-color-left);
-    padding: 10px 0;
-    padding-top: 100px;
-    margin-right: 50px;
-    
-}
-
-.social-items .image-icon{
-    width: 40px;
-}
-
-.uzb{
-  position: relative;
-  width: 100%;
-  height: 500px;
-}
-
-.cover-uzb{
-    position: absolute;
-    width: 45%;
-    height: 100%;
-    top: 0;
-    right: 0;
-    z-index: -1;
-    text-align: center;
-} 
-
-.uzb-cover h1{
-    color:var(--text-white);
-    padding: 100px;
-    font-size: 2.5em;
-    margin-bottom: 20px;
-} 
-
 .dropdown-menu {
     min-width: 89px;
-}
-
-.xor{
-    position: absolute;
-    width: 350px;
-    height: 70px;
-    margin-bottom: 0;
-    /* margin: 50px; */
-    margin-top: 220px;
-    z-index: 1;
-}
-
-.center{
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translate(-50%);
-    font-size: 18px;
-    color:var(--text-white);
-}
-
-.round-button{
-    background-color: #F69F00; 
-    color: white; 
-    border: none; 
-    padding: 15px 30px; 
-    font-size: 1.2em; 
-    cursor: pointer; 
-    border-radius: 50px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
-    transition: background-color 0.3s ease; 
-    margin-left: 50px;
-    margin-top: 50px;
 }
 
 .btn-primary{
     background-color:var(--text-blue-solid); 
     color: white; 
 }
-
-.tours{
-    position: absolute;
-    display: flex;
-    width: 500px;
-    height: 10px;
-    background-image: url(../images/workers.png);
-    color: white;
-}
-
 .breadcrumbs{
     background-color: var(--light-blue);
     height: 50px;
     padding:10px;
 }
-
-/* .form-container {
-    background-color:var(--light-blue);
-    padding: 30px;
-    height: 400px;
-    margin: 50px auto;
-}
-.form-container h2 {
-    font-weight: bold;
-    margin-bottom: 15px;
-}
-.form-container p {
-    margin-bottom: 10px;
-}
-.form-container .form-control {
-    margin-bottom: 15px;
-    border-radius: 5px;
-    padding: 10px;
-} */
-.btn-submit {
-    background-color: #133875;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 5px;
-    border: none;
-    width: 100%;
-    font-size: 16px;
-}
-
-
-.note {
-    font-style: italic;
-    color: #666;
-}
-
-.booking-form {
-    margin: 0 auto;
-    padding: 20px;
-    background-color:var(--light-blue);
-}
-
-.booking-form h1 {
-    color: var(--text-blue-solid);
-    text-align: center;
-    margin-bottom: 30px;
-}
-.form-row {
-    display: flex;
-    margin-bottom: 20px;
-}
-.form-group {
-    flex: 1;
-    margin-right: 20px;
-}
-.form-group:last-child {
-    margin-right: 0;
-}
-.booking-form input,
-.booking-form textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    background-color: white;
-}
-.booking-form textarea {
-    height: 100px;
-    resize: vertical;
-}
-.booking-form input[type="date"]::-webkit-calendar-picker-indicator {
-    float: right;
-    margin-right: 5px;
-}
-.room-type {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 20px;
-}
-.room-type h3,
-.room-type p {
-    margin: 0;
-}
-
-.map{
-    width: 100%;
-    position: relative;
-    z-index: -1;
-}
-
-.contact{
-    width: 770px;
-    height: 200px;
-    position: absolute;
-    z-index: 1;
-    bottom: -200px;
-    right: 209px;
-    justify-content: center;
-}
-
-.btn-lg{
-    background-color:#015FA0; 
-    color:white; 
-    width: 350px; 
-    height: 60px;
-}
-
 .items{
     background-color: var(--light-blue); 
     padding: 10px;
     /* width: 1000px; */
 }
-
-.items > img{
-    width: 40px; 
-    height: 70px; 
-    margin-right: 10px;
-}
-
-/* .bg-corp{
-    background-color:var(--background-color-left);
-    height: 25vh;
-} */
 
 .list-inline > li{
     color:white;
@@ -1258,108 +630,6 @@ list-inline-item{
     margin-top: 7%;
     padding-left: 17px;
 }
-
-.p-letter{
-    margin-top: 20%;
-    color: white;
-}
-
-.bi.bi-telephone-fill{
-    color:white;
-    
-}
-
-.bi.bi-star-fill{
-    color: var(--orange);
-}
-
-.orient > img{
-    width: 200px;
-    height:200px;
-    margin-top: -40px;
-}
-
-.star{
-    background-color:var(--light-blue);
-    padding: 15px;
-    padding-top: 55px;
-    height: 300px;
-    
-}
-
-.star > p{
-    color:var(--background-color-left);
-}
-
-.hotel-h2{
-    color:var(--text-blue-solid);
-}
-
-.uzbekistan{
-    text-align: center;
-    text-transform: uppercase;
-    color:var(--text-orange);
-    font-weight: bold;
-}
-
-
-.uzblue{
-    background-color:var(--light-blue);
-    padding:5%;
-    border-top-left-radius: 75px;
-}
-
-.infoicon-span{ 
-    /* display: inline-block; */
-    width: 75px;
-    height: 75px; 
-    background-color: #133875; 
-    /* border-radius: 50%; 
-    text-align: center; 
-    line-height: 40px; */
-    padding: 17px;
-    
-}
-
-.information{
-    background-color:var(--light-blue);
-    padding:2%;
-    margin-top: 25px;
-}
-
-.tourtitle{
-    text-align: center;
-    color:var(--text-orange);
-    text-transform: uppercase;
-    font-weight: bold;
-}
-
-.toursubtitle{
-    text-align: center;
-    color:var(--text-black);
-    /* text-transform: uppercase; */
-    font-weight: bold;
-}
-
-.card-body-tours{
-    padding:25px;
-    /* height: 50px; */
-}
-
-.card-body-tours > h5{
-    font-weight: bold;
-    color:var(--text-blue-solid);
-}
-
-.price{
-    margin-left: 6px;
-    font-weight: 500;
-}
-
-.price > span{
-    color:var(--text-blue-solid);
-}
-
 
 .pagination .page-item .page-link{
     color: gray; 
@@ -1425,42 +695,11 @@ list-inline-item{
 
 @media (max-width: 600px) {
     
-    body{
-        overflow-x: hidden;
-    }
-
-    .breadcrumb-item {
-        color: var(--light-black);
-    }
-
-    .bg_mob_index {
-        background-image: url(../images/indexNew/bg_mob_index.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        height: 600px;
-        position: relative;
-    }
-
-    .bg_prmr_mob {
-        background-image: url(../images/indexNew/bg_prmr_mob.png);
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-position: center;
-        width: 90%;
-        flex-direction: column;
-        height: 70%;
-        position: absolute;
-        top: -58px;
-        left: 22px;
-    }
-
     .btn {
         font-size: 16px;
         padding: 10px 20px;
     }
 
-    
     .card-img-overlay {
         position: absolute;
         width: 100%;
@@ -1481,8 +720,6 @@ list-inline-item{
         color: #003366; 
         z-index: 10;
     }
-
-
     .next-btn {
         position: absolute;
         border: none;
