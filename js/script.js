@@ -117,6 +117,7 @@ $(document).ready(function () {
   }
   slider.slick($.extend({}, extraOptions, options ));
 })
+$(".menu").metisMenu();
 AOS.init();
 function setImageSizes() {
   document.querySelectorAll('.gallery a').forEach(link => {
