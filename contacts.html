@@ -17,6 +17,10 @@
     <link rel="stylesheet" type="text/css"
     href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.5/css/lightbox.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@5/dist/photoswipe.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/metismenu/dist/metisMenu.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css">
     <link rel="stylesheet" href="css/style.css">
 
 </head>
@@ -57,21 +61,78 @@
                 </button>
                 </div>
                 <div class="collapse navbar-collapse" id="navbarColor03">
-                    <ul class="navbar-nav mx-auto gap-xl-4">
-                        <li class="nav-item">
-                            <a class="nav-link" href="tours.html">Tours</a>
+                    <ul class="navbar-nav mx-auto gap-3">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="mainDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Uzbekistan
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="mainDropdown">
+                                <li><a class="dropdown-item" href="uzbekistan.html">About country</a></li>
+                                <li class="dropdown-submenu">
+                                    <a class="dropdown-item dropdown-toggle" href="#">Regions</a>
+                                    <ul class="dropdown-menu">
+                                        <li class="dropdown-item"><a href="tashkent.html" class="nav-link">Tashkent</a></li>
+                                            <li class="dropdown-item"><a href="samarkand.html" class="nav-link">Samarkand</a></li>
+                                            <li class="dropdown-item"><a href="bukhara.html" class="nav-link">Bukhara</a></li>
+                                            <li class="dropdown-item"><a href="xorezm.html" class="nav-link">Xorezmm</a></li>
+                                            <li class="dropdown-item"><a href="shakhrisabz.html" class="nav-link">Shahrisabz</a></li>
+                                            <li class="dropdown-item"><a href="karakalpakstan.html" class="nav-link">Karakalpacstan</a></li>
+                                            <li class="dropdown-item"><a href="termez.html" class="nav-link">Termez</a></li>
+                                            <li class="dropdown-item"><a href="fergana.html" class="nav-link">Fergana</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a href="tours.html" class="nav-link">Tours</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Our brands</a>
+                            <a href="servises.html" class="nav-link">Services</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Central Asia</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="mainDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Our brands
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="mainDropdown">
+                                <li class="dropdown-item"><a class="nav-link" href="orientbus.html">Orientbus</a></li>
+                                <li class="dropdown-item">
+                                    <a class="nav-link" href="hotels.html">Orient Star Hotel</a>
+                                </li>
+                            </ul>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="servises.html">Services</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="mainDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Central Asia
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="mainDropdown">
+                                <li class="dropdown-item"><a class="nav-link" href="kazakhstan.html">Kazakhstan</a></li>
+                                <li class="dropdown-item">
+                                    <a class="nav-link" href="kyrgyzstan.html">Kyrgystan</a>
+                                </li>
+                                <li class="dropdown-item">
+                                    <a class="nav-link" href="tajikistan.html">Tadjikistan</a>
+                                </li>
+                                <li class="dropdown-item">
+                                    <a class="nav-link" href="turkmenistan.html">Turkmenistan</a>
+                                </li>
+                            </ul>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="aboutus.html">About Us</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="mainDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                About us
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="mainDropdown">
+                                <li class="dropdown-item"><a class="nav-link" href="aboutus.html">About company</a></li>
+                                <li class="dropdown-item">
+                                    <a class="nav-link" href="gallery.html">Gallery</a>
+                                </li>
+                                <li class="dropdown-item">
+                                    <a class="nav-link" href="news.html">News</a>
+                                </li>
+                                <li class="dropdown-item">
+                                    <a class="nav-link" href="contacts.html">Contacts</a>
+                                </li>
+                            </ul>
                         </li>
                     </ul>
                     <div class="d-flex align-items-center">
@@ -264,7 +325,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.5/js/lightbox.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/photoswipe@5/dist/umd/photoswipe.umd.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/photoswipe@5/dist/umd/photoswipe-lightbox.umd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/metismenu/dist/metisMenu.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/moment/min/moment.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
     <script src="js/script.js"></script>
   </body>
 </html>
