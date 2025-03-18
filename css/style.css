@@ -660,6 +660,16 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     text-decoration: none;
     background-color: var(--color-light-corp);
 }
+.dropdown-submenu .dropdown-menu { 
+    position: absolute;
+    top: 0; 
+    left: 100%; 
+    margin-top: -1px; 
+  }
+  .dropdown-submenu:hover > .dropdown-menu,
+  .dropdown-submenu:focus > .dropdown-menu {
+      display: block;
+  }
 @media(max-width: 1400px){
     .corp-window{
         position: static;
