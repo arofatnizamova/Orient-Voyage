@@ -17,7 +17,7 @@
 body {
     overflow-x: hidden;
     position: relative;
-    font-family: "Inter";
+    font-family: "Inter", sans-serif;
 }
 
 a{
@@ -381,10 +381,7 @@ a{
     height: 100%;
   }
   .bg-blue {
-    background-image: url('../images/indexNew/bg-blue.png');
-    background-repeat: no-repeat;
-    background-size: cover; 
-    background-position: center; 
+    background: rgba(19, 56, 117, 0.92);
     width: 90%;
     height: fit-content;
     bottom: -20%;
@@ -648,7 +645,14 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 .page-link:focus{
     box-shadow: none;
 }
-
+.section-bg-img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+}
 @media(max-width: 1400px){
     .corp-window{
         position: static;

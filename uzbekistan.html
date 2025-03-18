@@ -9,7 +9,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="fonts/web/inter.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/css/flag-icons.min.css">
     <link rel="stylesheet" type="text/css"
@@ -17,20 +17,17 @@
     <link rel="stylesheet" type="text/css"
     href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.5/css/lightbox.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@5/dist/photoswipe.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/style.css">
 
 </head>
 
 <body class="country-information-page-bg">
-    <!-- header -->
     <header>
         <div class="container-fluid">
         <nav class="navbar navbar-expand-lg z-5">
             <div class="d-flex">
                 <a class="navbar-brand" href="index.html">
-                    <img src="images/OrientLogo.svg" alt="Orient Voyages" class="img-fluid logo">
+                    <img src="icons/logo.svg" alt="Orient Voyages" class="img-fluid logo">
                 </a>
             </div>             
                 <div class="d-lg-none">
@@ -80,7 +77,7 @@
                     </ul>
                     <div class="d-flex align-items-center">
                         <div class="d-lg-flex d-none align-items-center">
-                            <i class="bi bi-telephone-fill icon-span me-3 bg-corp"></i>
+                            <i class="bi bi-telephone-fill icon-span text-white me-3 bg-corp"></i>
                             <div class="d-flex flex-column justify-content-center">
                                <span>Call Anytime</span>
                                <a href="tel:+998974057579">+99897 405 75 79</a>  
@@ -126,54 +123,40 @@
                   </nav>
             </div>
         </div>
+        <section class="d-none position-relative d-lg-block">
+            <img src="images/uzbekistan/bg.png" alt="" class="img-fluid object-fit-cover section-bg-img">
+            <div class="container-fluid">
+                <div class="py-5 w-100 h-100">
+                    <h1 class="text-white ps-5 ms-5">Узбекистан: Древний благодатный край</h1>
+                </div>
+            </div>
+        </section>
+        <section class="d-none d-lg-block">
+            <div class="container-fluid">
+                <ul class="list-group list-group-horizontal d-flex justify-content-between w-100">
+                    <li class="list-group-item active text-blue bg-light-blue p-3 px-5">
+                        <a href="#" class="text-decoration-none text-blue">Об Узбекистане</a>
+                    </li>
+                    <li class="list-group-item p-3 text-gr-blue">
+                        <a href="#" class="text-decoration-none text-gr-blue">Достопримечательности</a>
+                    </li>
+                    <li class="list-group-item p-3 text-gr-blue">
+                        <a href="#" class="text-decoration-none text-gr-blue">Кухня</a>
+                    </li>
+                    <li class="list-group-item p-3 text-gr-blue">
+                        <a href="#" class="text-decoration-none text-gr-blue">Культура и традиции</a>
+                    </li>
+                    <li class="list-group-item p-3 text-gr-blue">
+                        <a href="#" class="text-decoration-none text-gr-blue">Путешествия и отдых</a>
+                    </li>
+                    <li class="list-group-item p-3 text-gr-blue">
+                        <a href="#" class="text-decoration-none text-gr-blue">Практическая информация</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
     </main>
-    <!-- section top -->
-    <section class="d-none bg-uzb d-lg-block">
-        <div class="container-fluid">
-            <div class="py-5 w-100 h-100">
-                <h1 class="text-white ps-5 ms-5">Узбекистан: Древний благодатный край</h1>
-            </div>
-        </div>
-    </section>
-
-    <!-- section top => mobile -->
-    <section class="d-md-none bg-uzb-mb">
-        <div class="container-fluid">
-            <div class="p-5">
-                <h1 class="text-white display-6 fw-normal">Узбекистан: Древний благодатный край</h1>
-            </div>
-        </div>
-    </section>
-
-
-    <!-- horizontal inline list -->
-    <section class="d-none d-lg-block">
-        <div class="container-fluid">
-            <ul class="list-group list-group-horizontal d-flex justify-content-between w-100 px-5">
-                <li class="list-group-item active text-blue bg-light-blue p-3 px-5">
-                    <a href="#" class="text-decoration-none text-blue">Об Узбекистане</a>
-                </li>
-                <li class="list-group-item p-3 text-gr-blue">
-                    <a href="#" class="text-decoration-none text-gr-blue">Достопримечательности</a>
-                </li>
-                <li class="list-group-item p-3 text-gr-blue">
-                    <a href="#" class="text-decoration-none text-gr-blue">Кухня</a>
-                </li>
-                <li class="list-group-item p-3 text-gr-blue">
-                    <a href="#" class="text-decoration-none text-gr-blue">Культура и традиции</a>
-                </li>
-                <li class="list-group-item p-3 text-gr-blue">
-                    <a href="#" class="text-decoration-none text-gr-blue">Путешествия и отдых</a>
-                </li>
-                <li class="list-group-item p-3 text-gr-blue">
-                    <a href="#" class="text-decoration-none text-gr-blue">Практическая информация</a>
-                </li>
-            </ul>
-        </div>
-    </section>
-
-    <!-- section info  -->
-
+    
     <section class="pb-5 mb-5">
         <div class="container-fluid">
             <div class="row pt-5 pb-5">
@@ -245,9 +228,9 @@
                     <div class="text-center border border-gray border-2 p-3 me-5 pt-sm-5 ">
                         <p class="text-gray fs-5 mb-1">Country</p>
                         <p class="fs-4 mb-3 text-dark">Uzbekiston</p>
-                        <img src="images/UzbekistanNew/flag.png" class="img-fluid mb-2" alt="Flag of Tajikistan">
+                        <img src="images/uzbekistan/flag.png" class="img-fluid mb-2" alt="Flag of Tajikistan">
                         <p class="pt-0 text-gray mb-4">Flag</p>
-                        <img src="images/UzbekistanNew/gerb.png" class="img-fluid mb-2" alt="Coat of arms">
+                        <img src="images/uzbekistan/herb.png" class="img-fluid mb-2" alt="Coat of arms">
                         <p class="pt-0 text-gray mb-4">Сoat of arms</p>
                         <div class="text-start fs-5 fw-light">
                             <table class="table">
@@ -328,83 +311,60 @@
             </div>
         </div>
     </section>
-
-
-
-    <!-- adekvatniy footer -->
-    <footer class="bg-corp d-none d-lg-block">
+    <footer class="bg-corp py-lg-5 py-4">
         <div class="container-fluid">
-            <div class="row pt-4 px-5 d-flex align-items-center">
-                <div class="col-lg-3 d-flex justify-content-center">
-                    <img class="img-fluid mt-3" src="images/voyage2.svg" alt="Orient">
+            <div class="row gy-4 gx-0">
+                <div class="col-lg-2 col-4"> 
+                    <a href="index.html" class="d-block w-100">
+                        <img src="icons/logo-footer.svg" alt="" class="footer-logo img-fluid">
+                    </a>
                 </div>
-                <div class="col-lg-6">
-                    <ul class="list-inline d-flex justify-content-center gap-4 px-5 mx-5 mb-0">
-                        <li class="list-inline-item"><a href="#" class="text-decoration-none text-white">Tours</a></li>
-                        <li class="list-inline-item"><a href="#" class="text-decoration-none text-white">Our brands</a>
-                        </li>
-                        <li class="list-inline-item"><a href="#" class="text-decoration-none text-white">Central
-                                Asia</a></li>
-                        <li class="list-inline-item"><a href="#" class="text-decoration-none text-white">Services</a>
-                        </li>
-                        <li class="list-inline-item"><a href="#" class="text-decoration-none text-white">About Us</a>
-                        </li>
-                    </ul>
+                <div class="col-xxl-8 col-lg-7 order-lg-2 order-3">
+                    <div class="w-100 h-100 d-flex align-items-lg-center justify-content-lg-center">
+                        <ul class="list-unstyled d-flex gap-xl-5 gap-lg-3 align-items-lg-center flex-lg-row flex-column text-white mb-0">
+                            <li class="mb-lg-0 mb-3">
+                                <a href="tours.html">Tours</a>
+                            </li>
+                            <li class="mb-lg-0 mb-3">
+                                <a href="#">Our brands</a>
+                            </li>
+                            <li class="mb-lg-0 mb-3">
+                                <a href="#">Central Asia</a>
+                            </li>
+                            <li class="mb-lg-0 mb-3">
+                                <a href="servises.html">Services</a>
+                            </li>
+                            <li class="mb-lg-0 mb-3">
+                                <a href="aboutus.html">About Us</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="col-lg-3">
-                    <div class="d-flex mt-5 justify-content-center align-items-center text-white rounded list-inline">
-                        <div class="list-inline-item me-3 d-flex justify-content-center align-items-center rounded-circle bg-gray"
-                            style="width: 50px; height: 50px;">
-                            <img src="images/tajikistan/phone.svg" alt="">
-                        </div>
-                        <div class="list-inline-item">
-                            <p>Call Anytime</p>
-                            <p>+99897 405 75 79</p>
+                <div class="col-xxl-2 col-lg-3 col-8 order-lg-3 order-2">
+                    <div class="w-100 h-100 d-flex align-items-center justify-content-lg-start justify-content-end text-white">
+                        <div class="d-flex align-items-center">
+                            <i class="bi bi-telephone-fill icon-span me-3 bg-opacity-white"></i>
+                            <div class="d-flex flex-column justify-content-center">
+                               <span>Call Anytime</span>
+                               <a href="tel:+998974057579">+99897 405 75 79</a>  
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </footer>
-
-
-    <!-- footer mobile version -->
-    <footer class="bg-corp d-md-none text-white py-4 h-100">
-        <div class="container">
-            <div class="row align-items-center mb-3">
-                <div class="col-6">
-                    <img class="img-fluid" src="images/voyage2.svg" alt="Orient">
-                </div>
-                <div class="col-6 d-flex justify-content-center">
-                    <div class="rounded-circle bg-gray d-flex justify-content-center align-items-center me-3"
-                        style="width: 50px; height: 50px;">
-                        <img src="images/tajikistan/phone.svg" alt="Phone" class="img-fluid">
-                    </div>
-                    <div>
-                        <p class="mb-1">Call Anytime</p>
-                        <p class="mb-0">+99897 405 75 79</p>
-                    </div>
-                </div>
-            </div>
-            <div class="row align-items-center">
-                <div class="col-6">
-                    <ul class="list-unstyled fs-4 mt-5 mb-4">
-                        <li class="mb-3"><a href="#" class="text-white text-decoration-none">Tours</a></li>
-                        <li class="mb-3"><a href="#" class="text-white text-decoration-none">Our brands</a></li>
-                        <li class="mb-3"><a href="#" class="text-white text-decoration-none">Central Asia</a></li>
-                        <li class="mb-3"><a href="#" class="text-white text-decoration-none">Services</a></li>
-                        <li class="mb-3"><a href="#" class="text-white text-decoration-none">About Us</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
+    <!-- js connections -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/ab16f4767e.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.5/js/lightbox.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/photoswipe@5/dist/umd/photoswipe.umd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/photoswipe@5/dist/umd/photoswipe-lightbox.umd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
 
 </body>
 
