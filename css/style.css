@@ -578,7 +578,6 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     text-decoration: none;
     background-color: #fff;
     border: none;
-    font-size: 20px;
 }
 
 .table {
