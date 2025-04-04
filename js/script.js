@@ -1,9 +1,5 @@
 $(document).ready(function () {
-  // $('.dropdown-submenu a').on("click", function(e) {
-  //   $(this).next('ul').toggle();
-  //   e.stopPropagation();
-  //   e.preventDefault();
-  // });
+
   $('.slick-slider').each(function () {
   let slider = $(this);
   let options = {
@@ -211,7 +207,7 @@ $(document).ready(function () {
   });
   //input on tour page configs
   $(function() {
-    let datePicker = $('#dateRangePicker');
+    let datePicker = $('.dateRangePicker');
 
     if (datePicker.length) { 
         datePicker.daterangepicker({
